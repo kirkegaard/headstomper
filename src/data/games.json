@@ -1,99 +1,107 @@
-{
-  "games": [
-    {
-      "title": "Street Fighter 5",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis esse saepe consequuntur, dolor deleniti nemo. Atque, sed sequi voluptatum corrupti non recusandae rem voluptas maiores expedita a asperiores accusamus.",
-      "image": "assets/streetfighter5.png",
-      "startDate": "8th May 2020 - kl. 10:00",
-      "stream": "https://www.twitch.tv/capcomfighters",
-      "brackets": "https://smash.gg/tournament/headstomper-2019/events/street-fighter-v-arcade-edition/brackets",
-      "register": "https://smash.gg/tournament/headstomper-2019",
-      "rules": [
-        "Double Elimination",
-        "2/3 Games per Set",
-        "3/5 Games for all Top 8 Sets",
-        "Winner must keep character, but may change V-Trigger prior to the losing player selecting their V-Trigger",
-        "Losing player may switch character and V-Trigger",
-        "Random stage select (players may opt for an agreed stage)",
-        "The Grid, Kanzuki Beach, Skies of Honor, and Flamenco Tavern stages are banned from play; if these stages are randomly selected repeat random stage selection process until a tournament legal stage appears",
-        "The following costumes are banned: Pyron Gill and Nergigagnte Blanka"
-      ]
-    },
-    {
-      "title": "Tekken 7",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis esse saepe consequuntur, dolor deleniti nemo. Atque, sed sequi voluptatum corrupti non recusandae rem voluptas maiores expedita a asperiores accusamus.",
-      "image": "assets/tekken7.jpg",
-      "startDate": "8th May 2020 - kl. 10:00",
-      "stream": "https://www.twitch.tv/tekken",
-      "brackets": "https://smash.gg/tournament/headstomper-2019/events/street-fighter-v-arcade-edition/brackets",
-      "register": "https://smash.gg/tournament/headstomper-2019",
-      "rules": [
-        "Double Elimination",
-        "Tournament Mode Default Settings",
-        "3/5 Rounds per Game",
-        "2/3 Games per Set",
-        "3/5 Games for Winners & Losers Finals",
-        "3/5 Games for Grand Finals",
-        "Random stage select for Game 1",
-        "Winner must keep character",
-        "Loser may switch stage (with same character) or switch character (with random stage)",
-      ]
-    },
-    {
-      "title": "Guilty Gear Xrd Rev 2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis esse saepe consequuntur, dolor deleniti nemo. Atque, sed sequi voluptatum corrupti non recusandae rem voluptas maiores expedita a asperiores accusamus.",
-      "image": "assets/guiltygear.jpg",
-      "startDate": "8th May 2020 - kl. 10:00",
-      "stream": "https://www.twitch.tv/guiltygear",
-      "brackets": "https://smash.gg/tournament/headstomper-2019/events/street-fighter-v-arcade-edition/brackets",
-      "register": "https://smash.gg/tournament/headstomper-2019",
-      "rules": [
-        "Double Elimination",
-        "Default settings",
-        "2/3 Rounds per Game",
-        "2/3 Games per Set",
-        "3/5 Games for Winners & Losers Finals",
-        "3/5 Games for Grand Finals",
-        "Winner must keep character",
-        "Loser may switch",
-      ]
-    },
-    {
-      "title": "Samurai Shodown",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis esse saepe consequuntur, dolor deleniti nemo. Atque, sed sequi voluptatum corrupti non recusandae rem voluptas maiores expedita a asperiores accusamus.",
-      "image": "assets/samuraishodown.jpg",
-      "startDate": "8th May 2020 - kl. 10:00",
-      "stream": "https://www.twitch.tv/samsho",
-      "brackets": "https://smash.gg/tournament/headstomper-2019/events/street-fighter-v-arcade-edition/brackets",
-      "register": "https://smash.gg/tournament/headstomper-2019",
-      "rules": [
-        "Double Elimination",
-        "Default Settings",
-        "60 second timer",
-        "2/3 Rounds per Game",
-        "2/3 Games per Set",
-        "3/5 Games for Winners, Losers, and Grand Finals",
-        "Winner must keep character",
-        "Loser may switch",
-        "Random stage select (players may opt for an agreed stage)",
-      ]
-    },
-    {
-      "title": "Granblue Fantasy",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis esse saepe consequuntur, dolor deleniti nemo. Atque, sed sequi voluptatum corrupti non recusandae rem voluptas maiores expedita a asperiores accusamus.",
-      "image": "assets/granbluefantasy.png",
-      "startDate": "8th May 2020 - kl. 10:00",
-      "stream": "https://www.twitch.tv/granbluefantasy",
-      "brackets": "https://smash.gg/tournament/headstomper-2019/events/street-fighter-v-arcade-edition/brackets",
-      "register": "https://smash.gg/tournament/headstomper-2019",
-      "rules": [
-        "Double Elimination"
-        "Default settings"
-        "Winner must keep character"
-        "Loser may switch"
-        "Random stage select (players may opt for an agreed stage)"
-        "Additional rules to be set after game release"
-      ]
-    },
-  ]
-}
+[
+  {
+    "title": "Street Fighter 5",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis esse saepe consequuntur, dolor deleniti nemo. Atque, sed sequi voluptatum corrupti non recusandae rem voluptas maiores expedita a asperiores accusamus.",
+    "image": "assets/streetfighter5.png",
+    "startDate": "8th May 2020 - kl. 10:00",
+    "stream": "https://www.twitch.tv/capcomfighters",
+    "brackets": "https://smash.gg/tournament/headstomper-2019/events/street-fighter-v-arcade-edition/brackets",
+    "register": "https://smash.gg/tournament/headstomper-2019",
+    "rules": [
+      "Double Elimination",
+      "2/3 Games per Set",
+      "3/5 Games for all Top 8 Sets",
+      "Winner must keep character, but may change V-Trigger prior to the losing player selecting their V-Trigger",
+      "Losing player may switch character and V-Trigger",
+      "Random stage select (players may opt for an agreed stage)",
+      "The Grid, Kanzuki Beach, Skies of Honor, and Flamenco Tavern stages are banned from play; if these stages are randomly selected repeat random stage selection process until a tournament legal stage appears",
+      "The following costumes are banned: Pyron Gill and Nergigagnte Blanka"
+    ]
+  },
+  {
+    "title": "Tekken 7",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis esse saepe consequuntur, dolor deleniti nemo. Atque, sed sequi voluptatum corrupti non recusandae rem voluptas maiores expedita a asperiores accusamus.",
+    "image": "assets/tekken7.jpg",
+    "startDate": "8th May 2020 - kl. 10:00",
+    "stream": "https://www.twitch.tv/tekken",
+    "brackets": "https://smash.gg/tournament/headstomper-2019/events/street-fighter-v-arcade-edition/brackets",
+    "register": "https://smash.gg/tournament/headstomper-2019",
+    "rules": [
+      "Double Elimination",
+      "Tournament Mode Default Settings",
+      "3/5 Rounds per Game",
+      "2/3 Games per Set",
+      "3/5 Games for Winners & Losers Finals",
+      "3/5 Games for Grand Finals",
+      "Random stage select for Game 1",
+      "Winner must keep character",
+      "Loser may switch stage (with same character) or switch character (with random stage)"
+    ]
+  },
+  {
+    "title": "Guilty Gear Xrd Rev 2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis esse saepe consequuntur, dolor deleniti nemo. Atque, sed sequi voluptatum corrupti non recusandae rem voluptas maiores expedita a asperiores accusamus.",
+    "image": "assets/guiltygear.jpg",
+    "startDate": "8th May 2020 - kl. 10:00",
+    "stream": "https://www.twitch.tv/guiltygear",
+    "brackets": "https://smash.gg/tournament/headstomper-2019/events/street-fighter-v-arcade-edition/brackets",
+    "register": "https://smash.gg/tournament/headstomper-2019",
+    "rules": [
+      "Double Elimination",
+      "Default settings",
+      "2/3 Rounds per Game",
+      "2/3 Games per Set",
+      "3/5 Games for Winners & Losers Finals",
+      "3/5 Games for Grand Finals",
+      "Winner must keep character",
+      "Loser may switch"
+    ]
+  },
+  {
+    "title": "Samurai Shodown",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis esse saepe consequuntur, dolor deleniti nemo. Atque, sed sequi voluptatum corrupti non recusandae rem voluptas maiores expedita a asperiores accusamus.",
+    "image": "assets/samuraishodown.jpg",
+    "startDate": "8th May 2020 - kl. 10:00",
+    "stream": "https://www.twitch.tv/samsho",
+    "brackets": "https://smash.gg/tournament/headstomper-2019/events/street-fighter-v-arcade-edition/brackets",
+    "register": "https://smash.gg/tournament/headstomper-2019",
+    "rules": [
+      "Double Elimination",
+      "Default Settings",
+      "60 second timer",
+      "2/3 Rounds per Game",
+      "2/3 Games per Set",
+      "3/5 Games for Winners, Losers, and Grand Finals",
+      "Winner must keep character",
+      "Loser may switch",
+      "Random stage select (players may opt for an agreed stage)"
+    ]
+  },
+  {
+    "title": "Granblue Fantasy",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis esse saepe consequuntur, dolor deleniti nemo. Atque, sed sequi voluptatum corrupti non recusandae rem voluptas maiores expedita a asperiores accusamus.",
+    "image": "assets/granbluefantasy.png",
+    "startDate": "8th May 2020 - kl. 10:00",
+    "stream": "https://www.twitch.tv/granbluefantasy",
+    "brackets": "https://smash.gg/tournament/headstomper-2019/events/street-fighter-v-arcade-edition/brackets",
+    "register": "https://smash.gg/tournament/headstomper-2019",
+    "rules": [
+      "Double Elimination",
+      "Default settings",
+      "Winner must keep character",
+      "Loser may switch",
+      "Random stage select (players may opt for an agreed stage)",
+      "Additional rules to be set after game release"
+    ]
+  },
+  {
+    "title": "Side tournaments",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis esse saepe consequuntur, dolor deleniti nemo. Atque, sed sequi voluptatum corrupti non recusandae rem voluptas maiores expedita a asperiores accusamus.",
+    "image": "assets/...",
+    "startDate": "Please check smash.gg for more info",
+    "link": {
+      "url": "https://smash.gg",
+      "text": "For more info"
+    }
+  }
+]
