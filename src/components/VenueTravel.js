@@ -2,8 +2,6 @@ import React from 'react';
 
 import data from '../data/venuetravel';
 
-console.log(data['venue']);
-
 const VenueTravel = () => {
   let { venue, travel } = data;
 
