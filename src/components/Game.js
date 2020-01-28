@@ -1,57 +1,42 @@
 import React from 'react';
-import { Grid, Typography, List, ListItem, Link, Divider } from '@material-ui/core';
-
-const flexContainer = {
-  display: 'flex',
-  flexDirection: 'row',
-  padding: 0,
-};
 
 const Game = (props) => {
   return (
-    <Grid item sm={9}>
-      <Typography variant="h3">{props.title}</Typography>
-      <Typography variant="body1">{props.description}</Typography>
-      <Typography variant="h4">Tournament starts</Typography>
-      <Typography variant="body1">{props.startDate}</Typography>
+    <div className="columns">
+      <div className="column is-10">
+        <h3 className="is-size-4 has-text-weight-bold has-margin-bottom-7">{props.title}</h3>
+        <div className="content">
+          <p>{props.description}</p>
+        </div>
+        <h4 className="has-text-weight-bold is-size-5">Tournament starts</h4>
+        <div className="content">
+          <p>{props.startDate}</p>
+        </div>
 
-      <Divider/>
+        <div className="divider has-margin-bottom-6" />
 
-      <List style={flexContainer}>
-        { props.rules ?
-          <ListItem>
-            <Link color="inherit" href="#">
-              Rules
-            </Link>
-          </ListItem>
-          : null
-        }
-        { props.brackets ?
-          <ListItem>
-            <Link color="inherit" href={props.brackets}>
-              Brackets
-            </Link>
-          </ListItem>
-          : null
-        }
-        { props.stream ?
-          <ListItem>
-            <Link color="inherit" href={props.stream}>
-              Stream
-            </Link>
-          </ListItem>
-          : null
-        }
-        { props.link ?
-          <ListItem>
-            <Link color="inherit" href={props.link.url}>
-              {props.link.text}
-            </Link>
-          </ListItem>
-          : null
-        }
-      </List>
-    </Grid>
+        <div className="level is-mobile">
+          <div className="level-left">
+            { props.rules ?
+              <a className="level-item is-size-5 has-text-weight-bold" href="https://lowpoly.dk">Rules</a>
+              : null
+            }
+            { props.brackets ?
+              <a className="level-item is-size-5 has-text-weight-bold" href="https://lowpoly.dk">Brackets</a>
+              : null
+            }
+            { props.stream ?
+              <a className="level-item is-size-5 has-text-weight-bold" href="https://lowpoly.dk">Stream</a>
+              : null
+            }
+            { props.link ?
+              <a className="level-item is-size-5 has-text-weight-bold" href={props.link.url}>{props.link.text}</a>
+              : null
+            }
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

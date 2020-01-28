@@ -1,16 +1,79 @@
+// VARIABLES
+// ---------
+
+// Colors
+$pink: #DD316B;
+
+$black-bis: hsl(0, 0%, 7%);
+$black-ter: hsl(0, 0%, 14%);
+$black: hsl(0, 0%, 4%);
+
+$white-bis: hsl(0, 0%, 98%);
+$white-ter: hsl(0, 0%, 96%);
+$white: hsl(0, 0%, 100%);
+
+$primary: $pink;
+
+// Links
+$link: $black-bis;
+$link-hover: $pink;
+
+// Typograph
+$family-primary: din-2014, arial, sans-serif;
+
+// Breakpoints
+$tablet: 768px;
+
+
+// IMPORTS
+// ---------
 @import url('https://use.typekit.net/pgx5bef.css');
+@import "../node_modules/bulma/bulma.sass";
 
-// body {
-//   margin: 0;
-//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-//     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-//     sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   font-size: 16px;
-// }
 
-// code {
-//   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-//     monospace;
-// }
+// Weird link color hack
+.is-dark {
+  a {
+    color: $white;
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+
+// Bulma margin helpers
+$positions: (
+  "top",
+  "left",
+  "bottom",
+  "right"
+);
+$sizes: (1, 2, 3, 4, 5, 6, 7);
+$bulmaSizes: ($size-1, $size-2, $size-3, $size-4, $size-5, $size-6, $size-7);
+
+$i: 1;
+@each $size in $sizes {
+  $sizee: nth($bulmaSizes, $i);
+  $i: $i+1;
+  .has-margin-#{$size} {
+    margin: $sizee !important;
+  }
+  .has-negative-margin-#{$size} {
+    margin: -$sizee !important;
+  }
+  .has-padding-#{$size} {
+    padding: $sizee !important;
+  }
+  @each $position in $positions {
+    .has-margin-#{$position}-#{$size} {
+      margin-#{$position}: $sizee !important;
+    }
+    .has-padding-#{$position}-#{$size} {
+      padding-#{$position}: $sizee !important;
+    }
+    .has-negative-margin-#{$position}-#{$size} {
+      margin-#{$position}: -$sizee !important;
+    }
+  }
+}
