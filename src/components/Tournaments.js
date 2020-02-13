@@ -1,22 +1,22 @@
-import React from 'react';
+import React from "react";
 
-import Game from './Game';
-import Games from '../data/games';
-
-import './Tournaments.scss';
+import Game from "./Game";
+import Games from "../data/games";
 
 const Tournaments = () => {
   return (
-    <section className="section tournaments is-medium is-dark">
+    <section className="tournaments">
       <div className="container">
-
-        <h2 className="has-text-weight-bold is-uppercase is-size-1 has-margin-bottom-1">
+        <h1>
           Tournaments <span className="dot"></span>
-        </h2>
+        </h1>
 
-        <div className="columns is-multiline">
-          { Games.map((data, i) => (
-            <div key={i} className="column is-4-desktop is-6-tablet has-margin-bottom-1">
+        <div className="row">
+          {Games.map((data, i) => (
+            <div
+              key={i}
+              className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5"
+            >
               <Game {...data} />
             </div>
           ))}
@@ -24,6 +24,6 @@ const Tournaments = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Tournaments;

@@ -1,79 +1,148 @@
-// VARIABLES
-// ---------
-
-// Colors
-$pink: #DD316B;
-
-$black-bis: hsl(0, 0%, 7%);
-$black-ter: hsl(0, 0%, 14%);
-$black: hsl(0, 0%, 4%);
-
-$white-bis: hsl(0, 0%, 98%);
-$white-ter: hsl(0, 0%, 96%);
-$white: hsl(0, 0%, 100%);
-
+// Bootstrap defaults
+// ------------------
+$pink: #dd316b;
 $primary: $pink;
 
-// Links
-$link: $black-bis;
-$link-hover: $pink;
+// $body-bg: #131313;
+// $body-color: #fff;
 
-// Typograph
-$family-primary: din-2014, arial, sans-serif;
+$enable-responsive-font-sizes: true;
 
-// Breakpoints
-$tablet: 768px;
+$font-family-sans-serif: din-2014, arial, sans-serif;
+$font-size-base: 1rem;
 
+$h1-font-size: 3rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.125rem;
+$h4-font-size: 1.25rem;
 
-// IMPORTS
-// ---------
-@import url('https://use.typekit.net/pgx5bef.css');
-@import "../node_modules/bulma/bulma.sass";
+$headings-font-weight: 700;
+// $lead-font-size: $h3-font-size;
+// $lead-font-weight: 500;
 
+// $custom-range-track-bg: $primary;
+// $custom-range-track-height: 0.1rem;
 
-// Weird link color hack
-.is-dark {
-  a {
-    color: $white;
-    &:hover {
-      color: $link-hover;
-    }
-  }
+// $input-bg: #1c1c1c;
+// $input-disabled-bg: #888;
+// $input-color: #fff;
+// $input-border-color: transparent;
+// $input-border-width: 0px;
+// $input-placeholder-color: $input-disabled-bg;
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px
+// );
+
+$container-max-widths: (
+  sm: 720px,
+  md: 880px,
+  lg: 960px,
+  xl: 1280px
+);
+
+// Imports
+// -------
+@import url("https://use.typekit.net/pgx5bef.css");
+@import "~bootstrap/scss/bootstrap.scss";
+
+// Bootstrap overrides
+// -------------------
+
+body,
+html,
+#root {
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
 
-// Bulma margin helpers
-$positions: (
-  "top",
-  "left",
-  "bottom",
-  "right"
-);
-$sizes: (1, 2, 3, 4, 5, 6, 7);
-$bulmaSizes: ($size-1, $size-2, $size-3, $size-4, $size-5, $size-6, $size-7);
+h2 {
+  margin-bottom: 1rem;
+}
 
-$i: 1;
-@each $size in $sizes {
-  $sizee: nth($bulmaSizes, $i);
-  $i: $i+1;
-  .has-margin-#{$size} {
-    margin: $sizee !important;
-  }
-  .has-negative-margin-#{$size} {
-    margin: -$sizee !important;
-  }
-  .has-padding-#{$size} {
-    padding: $sizee !important;
-  }
-  @each $position in $positions {
-    .has-margin-#{$position}-#{$size} {
-      margin-#{$position}: $sizee !important;
-    }
-    .has-padding-#{$position}-#{$size} {
-      padding-#{$position}: $sizee !important;
-    }
-    .has-negative-margin-#{$position}-#{$size} {
-      margin-#{$position}: -$sizee !important;
+h3 {
+}
+
+h4 {
+  margin-bottom: 0.75rem;
+}
+
+h5 {
+  margin-bottom: 0.3rem;
+}
+
+p {
+  // font-weight: 300;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+section {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.header {
+  background-color: #000;
+  color: #fff;
+}
+.tournaments {
+  background-color: #1d1d1d;
+  color: #fff;
+}
+.venuetravel {
+  background-color: #fffbf0;
+  color: #1d1d1d;
+}
+
+.content {
+  margin-bottom: 1rem;
+}
+
+.divider {
+  display: block;
+  width: 75px;
+  height: 3px;
+  background-color: $pink;
+  margin-bottom: 1rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: $pink;
+}
+
+.game {
+  .menu {
+    a {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+      &:hover {
+        color: $pink;
+        text-decoration: none;
+      }
     }
   }
 }

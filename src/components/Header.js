@@ -1,22 +1,18 @@
-import React from 'react';
-import './Header.scss';
+import React from "react";
 
 const Header = () => {
   return (
-    <section className="hero is-black is-fullheight">
-      <div className="hero-body">
-        <div className="container has-text-centered">
-          <h1 className="title is-uppercase has-text-weight-bold is-size-1">
-            Headstomper
-          </h1>
-          <h2 className="subtitle">
-            8-10 May 2020
-          </h2>
-          <button className="button is-primary is-large">Register</button>
-        </div>
+    <div className="d-flex w-100 h-100 mx-auto flex-column header">
+      <nav className="mb-auto">
+        <div>navigation...</div>
+      </nav>
+      <div className="main mx-auto text-center mb-auto">
+        <h1 className="title">Headstomper</h1>
+        <h2 className="subtitle">8-10 May 2020</h2>
+        <button className="btn btn-primary btn-lg">Register</button>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default Header;
