@@ -2,7 +2,8 @@ import React from "react";
 import Header from "./components/Header";
 import Tournaments from "./components/Tournaments";
 import VenueTravel from "./components/VenueTravel";
-import "./App.scss";
+import Contact from "./components/Contact";
+import Sponsors from "./components/Sponsors";
 
 const App = () => {
   return (
@@ -10,6 +11,8 @@ const App = () => {
       <Header />
       <Tournaments />
       <VenueTravel />
+      <Sponsors />
+      <Contact />
     </React.Fragment>
   );
 };

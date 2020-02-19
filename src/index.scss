@@ -1,6 +1,7 @@
 // Bootstrap defaults
 // ------------------
 $pink: #dd316b;
+$gray: #1d1d1d;
 $primary: $pink;
 
 // $body-bg: #131313;
@@ -91,6 +92,14 @@ p {
   // font-weight: 300;
 }
 
+a {
+  transition: color 0.75s ease;
+  &:hover {
+    color: $gray;
+    text-decoration: none;
+  }
+}
+
 b,
 strong {
   font-weight: 600;
@@ -99,19 +108,37 @@ strong {
 section {
   padding-top: 9rem;
   padding-bottom: 9rem;
+
+  &.tournaments,
+  &.sponsors {
+    background-color: $gray;
+    color: #fff;
+  }
+
+  &.venuetravel,
+  &.contact {
+    background-color: #fffbf0;
+    color: $gray;
+  }
 }
 
-.header {
+header {
   background-color: #000;
   color: #fff;
 }
-.tournaments {
-  background-color: #1d1d1d;
-  color: #fff;
+
+.contact {
+  .services {
+    font-size: 1.4rem;
+  }
 }
-.venuetravel {
-  background-color: #fffbf0;
-  color: #1d1d1d;
+
+.sponsors {
+  .logos {
+    img {
+      max-height: 80px;
+    }
+  }
 }
 
 .content {

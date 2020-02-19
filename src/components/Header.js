@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="d-flex w-100 h-100 mx-auto flex-column header">
+    <header className="d-flex w-100 h-100 mx-auto flex-column">
       <nav className="mb-auto">
         <div>navigation...</div>
       </nav>
@@ -11,7 +11,7 @@ const Header = () => {
         <h2 className="subtitle">8-10 May 2020</h2>
         <button className="btn btn-primary btn-lg">Register</button>
       </div>
-    </div>
+    </header>
   );
 };
 
