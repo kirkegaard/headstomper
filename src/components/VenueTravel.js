@@ -18,25 +18,18 @@ const VenueTravel = () => {
                 <a href="https://www.nordicchoicehotels.com/hotels/sweden/malmo/quality-hotel-view/special-offers/headstomper-2020/">
                   <b>Quality Hotel View</b>
                 </a>
-                . The hotel is fully <b>air conditioned</b>, features{" "}
-                <b>multiple stages</b> and even a <b>bar!</b>
+                . The hotel is fully <b>air conditioned</b>, features <b>multiple stages</b> and even a <b>bar!</b>
               </p>
               <p>
-                Quality Hotel View will again this year provide us with{" "}
-                <b>free ice cream</b>, <b>popcorn</b> and <b>coffee</b>!
+                Quality Hotel View will again this year provide us with <b>free ice cream</b>, <b>popcorn</b> and <b>coffee</b>!
               </p>
               <h3>Accommodation</h3>
               <p>
-                We have an exclusive deal with Quality Hotel View (same as the
-                venue) with flat rates for rooms that will stay the same
-                forever. Regular rates may be higher or lower so make sure to
-                check before booking.
+                We have an exclusive deal with Quality Hotel View (same as the venue) with flat rates for rooms that will stay the same forever. Regular rates may be higher or
+                lower so make sure to check before booking.
               </p>
               <p>
-                <a
-                  href="https://www.nordicchoicehotels.com/hotels/sweden/malmo/quality-hotel-view/special-offers/headstomper-2020/"
-                  className="btn btn-primary"
-                >
+                <a href="https://www.nordicchoicehotels.com/hotels/sweden/malmo/quality-hotel-view/special-offers/headstomper-2020/" className="btn btn-primary">
                   Book room
                 </a>
               </p>
@@ -66,25 +59,19 @@ const VenueTravel = () => {
             <h2>Travel</h2>
             <div className="content">
               <p>
-                Traveling to the venue couldnt be easier with{" "}
-                <b>Copenhagen Airport</b> just one stop away! All flying guests
-                are recommended to use this airport as it's the cloest.
+                Traveling to the venue couldnt be easier with <b>Copenhagen Airport</b> just one stop away! All flying guests are recommended to use this airport as it's the
+                cloest.
               </p>
 
               <div className="divider" />
 
               <h3>From Copenhagen</h3>
               <p>
-                Take the train from Copenhagen Airport towards Malmø Sweden and
-                get off at the first stop, Hyllie station. The venue will be
-                located right outside the trainstation.
+                Take the train from Copenhagen Airport towards Malmø Sweden and get off at the first stop, Hyllie station. The venue will be located right outside the trainstation.
               </p>
 
               <h3>From Malmø</h3>
-              <p>
-                Take the train from Malmø towards Copenhagen. Get off at Hyllie
-                station.
-              </p>
+              <p>Take the train from Malmø towards Copenhagen. Get off at Hyllie station.</p>
             </div>
           </div>
 
@@ -98,23 +85,15 @@ const VenueTravel = () => {
                 <b>Spectator Pass:</b> 10 €
               </p>
               <p>
-                Regular passes are required to enter main lineup tournaments,
-                whereas Spectator passes only give access to enter
-                side-tournament. Both passes give full access to the venue
-                itself all days.
+                Regular passes are required to enter main lineup tournaments, whereas Spectator passes only give access to enter side-tournament. Both passes give full access to
+                the venue itself all days.
               </p>
-              <p>
-                After closing registration, Spectator passes are only available
-                for purchase on site at the venue.
-              </p>
+              <p>After closing registration, Spectator passes are only available for purchase on site at the venue.</p>
               <p>
                 <b>Registration deadline:</b> 1 May 2020
               </p>
               <p>
-                <a
-                  href="https://www.nordicchoicehotels.com/hotels/sweden/malmo/quality-hotel-view/special-offers/headstomper-2020/"
-                  className="btn btn-primary"
-                >
+                <a href="https://www.nordicchoicehotels.com/hotels/sweden/malmo/quality-hotel-view/special-offers/headstomper-2020/" className="btn btn-primary">
                   Register now!
                 </a>
               </p>

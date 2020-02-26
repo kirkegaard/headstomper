@@ -122,9 +122,36 @@ section {
   }
 }
 
+$top: darken(rgba(255, 198, 59, 0.3), 25%);
+$middle: darken(rgba(255, 0, 102, 0.6), 25%);
+$bottom: darken(rgba(183, 0, 198, 0.9), 25%);
+
 header {
-  background-color: #000;
+  .wallpaper {
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient($top, $middle, $bottom), url("assets/images/header.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-color: #000;
+  }
   color: #fff;
+  .logo {
+    max-height: 200px;
+  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   background: repeating-linear-gradient(0deg, rgba(black, 0.15), rgba(black, 0.15) 1px, transparent 1px, transparent 2px);
+  // }
 }
 
 .contact {
@@ -160,15 +187,42 @@ header {
   background-color: $pink;
 }
 
-.game {
-  .menu {
-    a {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #fff;
-      &:hover {
-        color: $pink;
-        text-decoration: none;
+.tournaments {
+  position: relative;
+  .wallpaper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(90%);
+    opacity: 0;
+    transition: opacity 350ms ease;
+  }
+  .game {
+    padding-top: 15px;
+    transition: all 350ms ease;
+    &:hover {
+      background-color: rgba(32, 32, 32, 0.9);
+      border-radius: 0.2rem;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+    .logo {
+      margin-top: 20px;
+      height: 120px;
+    }
+    .menu {
+      a {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #fff;
+        &:hover {
+          color: $pink;
+          text-decoration: none;
+        }
       }
     }
   }

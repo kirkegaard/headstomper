@@ -35,11 +35,7 @@ const sponsors = [
 ];
 
 const shuffle = arr => {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
+  return arr.sort(() => Math.random() - 0.5);
 };
 
 const Sponsors = () => {
@@ -52,11 +48,7 @@ const Sponsors = () => {
         <div className="row">
           <div className="col logos text-center">
             {shuffle(sponsors).map((s, i) => (
-              <a
-                key={i}
-                className="d-block d-sm-inline mr-4 mb-4"
-                href={s.link}
-              >
+              <a key={i} className="d-block d-sm-inline-block mr-4 mb-4" href={s.link}>
                 <img alt={s.title} src={s.logo} className="img-fluid" />
               </a>
             ))}

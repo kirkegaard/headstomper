@@ -33,15 +33,11 @@ const Contact = () => {
         </h1>
         <div className="row">
           <div className="col-12 col-md-4">
-            <p>
-              If you have any questions please contact us on one of the
-              following services. We're always happy to answer any questions you
-              might have!
-            </p>
+            <p>If you have any questions please contact us on one of the following services. We're always happy to answer any questions you might have!</p>
           </div>
           <div className="col-12 col-md-8 text-center services">
             {social.map((s, i) => (
-              <a className="d-block d-sm-inline mr-4" href={s.link}>
+              <a className="d-block d-sm-inline mr-4" key={i} href={s.link}>
                 <FontAwesomeIcon icon={s.icon} className="mr-1" />
                 <b>{s.title}</b>
               </a>
