@@ -127,18 +127,46 @@ $middle: darken(rgba(255, 0, 102, 0.6), 25%);
 $bottom: darken(rgba(183, 0, 198, 0.9), 25%);
 
 header {
-  .wallpaper {
+  .fullscreen {
     z-index: -100;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient($top, $middle, $bottom), url("assets/images/header.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-color: #000;
+    background: linear-gradient($top, $middle, $bottom);
+
+    .video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    @media (min-aspect-ratio: 16/9) {
+      .video {
+        height: 300%;
+        top: -100%;
+      }
+    }
+    @media (max-aspect-ratio: 16/9) {
+      .video {
+        width: 300%;
+        left: -100%;
+      }
+    }
   }
+  @media (max-width: 767px) {
+    .fullscreen {
+      background-size: cover;
+      background-position: center center;
+      background: linear-gradient($top, $middle, $bottom), url("assets/images/header.jpg");
+      .video {
+        display: none;
+      }
+    }
+  }
+
   color: #fff;
   .logo {
     max-height: 200px;
