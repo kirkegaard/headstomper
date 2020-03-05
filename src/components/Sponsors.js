@@ -5,6 +5,7 @@ import capcom from "../assets/sponsors/capcom.png";
 import coma from "../assets/sponsors/coma.png";
 import cph_esport from "../assets/sponsors/cph_esport.png";
 import webhallen from "../assets/sponsors/webhallen.png";
+import mes from "../assets/sponsors/mes.png";
 
 const sponsors = [
   {
@@ -31,6 +32,11 @@ const sponsors = [
     title: "Webhallen",
     logo: webhallen,
     link: "https://webhallen.com/"
+  },
+  {
+    title: "Malmø Esports",
+    logo: mes,
+    link: "https://malmoesport.se/"
   }
 ];
 
@@ -48,7 +54,11 @@ const Sponsors = () => {
         <div className="row">
           <div className="col logos text-center">
             {shuffle(sponsors).map((s, i) => (
-              <a key={i} className="d-block d-sm-inline-block mr-4 mb-4" href={s.link}>
+              <a
+                key={i}
+                className="d-block d-sm-inline-block mr-4 mb-4"
+                href={s.link}
+              >
                 <img alt={s.title} src={s.logo} className="img-fluid" />
               </a>
             ))}

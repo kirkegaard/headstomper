@@ -16,13 +16,18 @@ import bg_ggxrd from "../assets/games/guiltygear.jpg";
 const Games = [
   {
     title: "Street Fighter V: Champion Edition",
-    description: "Again this year we'll be a part of the Capcom Pro Tour. Come earn your points!",
+    description:
+      "Again this year we'll be a part of the Capcom Pro Tour. Come earn your points!",
     image: logo_sfv,
     background: bg_sfv,
     startDate: "May 9th 2020",
     links: [
       { title: "Stream", url: "https://www.twitch.tv/capcomfighters" },
-      { title: "Brackets", url: "https://smash.gg/tournament/headstomper-2020/events/street-fighter-v-champion-edition/brackets/741579/1191474/" }
+      {
+        title: "Brackets",
+        url:
+          "https://smash.gg/tournament/headstomper-2020/events/street-fighter-v-champion-edition/brackets/741579/1191474/"
+      }
     ],
     rules: [
       "Double Elimination",
@@ -37,13 +42,18 @@ const Games = [
   },
   {
     title: "Tekken 7",
-    description: "Want to be a part of the Tekken World Tour? Nows your chance! Come prove your worth!",
+    description:
+      "Want to be a part of the Tekken World Tour? Nows your chance! Come prove your worth!",
     image: logo_t7,
     background: bg_t7,
     startDate: "May 9th 2020",
     links: [
       { title: "Stream", url: "https://www.twitch.tv/tekken" },
-      { title: "Brackets", url: "https://smash.gg/tournament/headstomper-2020/events/tekken-7/brackets/741578/1191473/" }
+      {
+        title: "Brackets",
+        url:
+          "https://smash.gg/tournament/headstomper-2020/events/tekken-7/brackets/741578/1191473/"
+      }
     ],
     rules: [
       "Double Elimination",
@@ -59,13 +69,18 @@ const Games = [
   },
   {
     title: "Guilty Gear Xrd Rev 2",
-    description: "Get ready to rock! Get up to burn! Stand up with pride that burns for your desire!",
+    description:
+      "Get ready to rock! Get up to burn! Stand up with pride that burns for your desire!",
     image: logo_ggxrd,
     background: bg_ggxrd,
     startDate: "May 9th 2020",
     links: [
       { title: "Stream", url: "https://www.twitch.tv/tekken" },
-      { title: "Brackets", url: "https://smash.gg/tournament/headstomper-2020/events/guilty-gear-xrd-rev2/brackets/741583/1191478/" }
+      {
+        title: "Brackets",
+        url:
+          "https://smash.gg/tournament/headstomper-2020/events/guilty-gear-xrd-rev2/brackets/741583/1191478/"
+      }
     ],
     rules: [
       "Double Elimination",
@@ -80,13 +95,18 @@ const Games = [
   },
   {
     title: "Samurai Shodown",
-    description: "Samurai Shodown is back in this stylish fighter! So draw your sword and show us your skills",
+    description:
+      "Samurai Shodown is back in this stylish fighter! So draw your sword and show us your skills",
     image: logo_samsho,
     background: bg_samsho,
     startDate: "May 9th 2020",
     links: [
       { title: "Stream", url: "https://www.twitch.tv/tekken" },
-      { title: "Brackets", url: "https://smash.gg/tournament/headstomper-2020/events/samurai-shodown/brackets/741584/1191479/" }
+      {
+        title: "Brackets",
+        url:
+          "https://smash.gg/tournament/headstomper-2020/events/samurai-shodown/brackets/741584/1191479/"
+      }
     ],
     rules: [
       "Double Elimination",
@@ -102,13 +122,18 @@ const Games = [
   },
   {
     title: "Granblue Fantasy Versus",
-    description: "Are you ready for the brand new fighting game from Arc System Works?",
+    description:
+      "Are you ready for the brand new fighting game from Arc System Works?",
     image: logo_granblue,
     background: bg_granblue,
     startDate: "May 9th 2020",
     links: [
       { title: "Stream", url: "https://www.twitch.tv/tekken" },
-      { title: "Brackets", url: "https://smash.gg/tournament/headstomper-2020/events/granblue-fantasy-versus/brackets/741585/1191480/" }
+      {
+        title: "Brackets",
+        url:
+          "https://smash.gg/tournament/headstomper-2020/events/granblue-fantasy-versus/brackets/741585/1191480/"
+      }
     ],
     rules: [
       "Double Elimination",
@@ -121,6 +146,7 @@ const Games = [
   },
   {
     title: "Side tournaments",
+    background: "",
     description:
       "We will announce side tournaments when we get closer to the event. If you got ideas for tournaments please contact <a href='https://twitter.com/ProperNeophos'>Neophos</a>.",
     startDate: "Please check smash.gg for more info",
@@ -135,7 +161,7 @@ const Games = [
 ];
 
 const Tournaments = () => {
-  const [bg, setBg] = useState(null);
+  const [bg, setBg] = useState("");
   const [opacity, setOpacity] = useState(0);
   const onEnter = props => {
     setBg(props);
@@ -149,7 +175,10 @@ const Tournaments = () => {
 
   return (
     <section className="tournaments">
-      <div className="wallpaper" style={{ backgroundImage: `url(${bg})`, opacity: `${opacity}` }}></div>
+      <div
+        className="wallpaper"
+        style={{ backgroundImage: `url(${bg})`, opacity: `${opacity}` }}
+      ></div>
       <div className="container">
         <h1>
           Tournaments <span className="dot"></span>
@@ -157,7 +186,10 @@ const Tournaments = () => {
 
         <div className="row">
           {Games.map((data, i) => (
-            <div key={i} className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <div
+              key={i}
+              className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5"
+            >
               <Game onMouseEnter={onEnter} onMouseLeave={onLeave} {...data} />
             </div>
           ))}
