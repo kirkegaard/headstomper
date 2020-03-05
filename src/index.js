@@ -5,10 +5,14 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import ReactGA from "react-ga";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDiscord,
+  faTwitter,
+  faFacebook
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, fas);
+library.add(faDiscord, faTwitter, faFacebook, faEnvelope);
 
 ReactGA.initialize("UA-10316019-7");
 ReactGA.pageview(window.location.pathname + window.location.search);
