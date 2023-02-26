@@ -1,0 +1,55 @@
+.container {
+  min-height: 100vh;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+}
+
+.fullscreen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    rgba(210, 160, 45, 0.3),
+    rgba(170, 0, 70, 0.6),
+    rgba(140, 0, 110, 0.9)
+  );
+}
+
+.video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .logo {
+    max-width: 450px;
+  }
+}
