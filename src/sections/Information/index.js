@@ -49,7 +49,7 @@ const Information = () => {
             <p>
               Traveling to the venue couldnt be easier with Copenhagen Airport
               just one stop away! All flying guests are recommended to use this
-              airport as it's the cloest.
+              airport as it´s the cloest.
             </p>
             <h5>From Copenhagen</h5>
             <p>
