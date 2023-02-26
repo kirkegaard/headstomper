@@ -11,10 +11,11 @@ const Hero = () => {
           <video
             className={styles.video}
             poster="/assets/videos/hero.png"
-            src="/assets/videos/hero.mp4#t=1"
+            src="/assets/videos/hero.mp4#t=0.1"
             loop
             muted
             autoPlay
+            playsInline
           ></video>
         </div>
         <div className={styles.overlay}>
