@@ -137,6 +137,14 @@ h5 {
   font-size: calc(0.6em + 1vmin);
 }
 
+.title {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.title:first-child {
+  margin-top: 0;
+}
+
 .fw-bold {
   font-weight: bold;
 }

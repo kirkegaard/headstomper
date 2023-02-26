@@ -1,12 +1,11 @@
 import Button from "@/components/Button";
-import Section from "@/components/Section";
 import Container from "@/components/Container";
 
 import styles from "./index.module.css";
 
 const Hero = () => {
   return (
-    <Section className={styles.container}>
+    <div className={styles.container}>
       <Container>
         <div className={styles.fullscreen}>
           <video
@@ -39,7 +38,7 @@ const Hero = () => {
           <Button>Register now</Button>
         </div>
       </Container>
-    </Section>
+    </div>
   );
 };
 

@@ -1,0 +1,30 @@
+{
+  "main": [
+    {
+      "title": "Street Fighter 6",
+      "desc": "Street Fighter 6 is an upcoming fighting game developed and published by Capcom."
+    },
+    {
+      "title": "Tekken 7",
+      "desc": "Tekken 7 is a fighting game developed and published by Bandai Namco Entertainment."
+    },
+    {
+      "title": "Guilty Gear -Strive-",
+      "desc": "Guilty Gear Strive is a fighting video game developed and published by Arc System Works."
+    },
+    {
+      "title": "Granblue Fantasy: Versus",
+      "desc": "Granblue Fantasy Versus is a 2.5D fighting game developed by Arc System Works."
+    },
+    {
+      "title": "Melty Blood: Type Lumina",
+      "desc": "Melty Blood, sometimes shortened as Merubura, is a series of 2D visual novel fighting games, co-developed by dōjin circles Type-Moon and French-Bread as the meta-sequel of the Type-Moon's first visual novel Tsukihime."
+    }
+  ],
+  "side": [
+    {
+      "title": "Street Fighter III - 3rd Strike",
+      "desc": "Best game ever made. All the other Street Fighter games can suck it."
+    }
+  ]
+}
