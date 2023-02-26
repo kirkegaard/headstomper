@@ -1,14 +1,23 @@
 .button {
   padding: 0.8rem;
-  font-size: 1.2rem;
   border: 0;
   border-radius: var(--border-radius);
   cursor: pointer;
-  transition: transform 125ms ease-in-out;
+  transition: transform 125ms ease-out;
+  font-size: 1em;
 }
 
 .button:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
+  filter: brightness(110%);
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.large {
+  font-size: 1.2em;
 }
 
 .default {

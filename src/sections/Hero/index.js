@@ -25,7 +25,7 @@ const Hero = () => {
           />
           <div className="my-2">
             <h1 className="mb-1">
-              Scandinavias <span className="text-underline">BIGGEST</span>
+              Scandinavia's <span className="text-underline">BIGGEST</span>
               <br />
               fighting game tournament
             </h1>
@@ -35,7 +35,7 @@ const Hero = () => {
               Malmö, Sweden
             </p>
           </div>
-          <Button>Register now</Button>
+          <Button size="large">Register now</Button>
         </div>
       </Container>
     </div>
