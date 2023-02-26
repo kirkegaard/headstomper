@@ -41,8 +41,8 @@
 
   --color-default: #dd316b;
   --color-success: #72cca1;
-  --color-warning: #d1d087;
-  --color-danger: #e06f6f;
+  --color-warning: #ffa344;
+  --color-danger: #ff5050;
 
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -137,12 +137,16 @@ h5 {
   font-size: calc(0.6em + 1vmin);
 }
 
+.fw-bold {
+  font-weight: bold;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
-
 .text-underline {
-  border-bottom: 3px solid var(--color-default);
+  color: var(--color-warning);
+  border-bottom: 3px solid var(--color-warning);
 }
 
 .p-1 {

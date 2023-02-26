@@ -30,8 +30,11 @@ const Hero = () => {
               <br />
               fighting game tournament
             </h1>
-            <h2>9th - 11th June 2023</h2>
-            <h3>Malmö, Sweden</h3>
+            <p className="fw-bold">
+              9th - 11th June 2023
+              <br />
+              Malmö, Sweden
+            </p>
           </div>
           <Button>Register now</Button>
         </div>
