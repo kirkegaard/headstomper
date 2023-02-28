@@ -1,13 +1,14 @@
 @import "~rfs/scss";
 
 .button {
+  @include font-size(1rem);
+
   color: inherit;
-  padding: 0.8rem;
+  padding: 0.8rem 1.2rem;
   border: 0;
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: transform 125ms ease-out;
-  @include font-size(1rem);
 }
 
 .button:hover {
