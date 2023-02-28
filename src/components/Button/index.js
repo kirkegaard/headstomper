@@ -1,5 +1,5 @@
 import cx from "classnames";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 
 const Button = ({ children, size, variant = "default" }) => {
   return (
