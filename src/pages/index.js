@@ -6,6 +6,7 @@ import Information from "@/sections/Information";
 import Sponsors from "@/sections/Sponsors";
 import Contact from "@/sections/Contact";
 import Gallery from "@/sections/Gallery";
+import Rules from "@/sections/Rules";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Events />
       <Information />
+      <Rules />
       <Gallery />
       <Sponsors />
       <Contact />
