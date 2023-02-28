@@ -1,7 +1,7 @@
 import cx from "classnames";
 import styles from "./index.module.scss";
 
-const Button = ({ children, size, variant = "default" }) => {
+const Button = ({ children, size, variant = "default", ...rest }) => {
   return (
     <button
       className={cx(
@@ -14,6 +14,7 @@ const Button = ({ children, size, variant = "default" }) => {
           [styles.default]: variant === "default",
         }
       )}
+      {...rest}
     >
       {children}
     </button>

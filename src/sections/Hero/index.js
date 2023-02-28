@@ -25,11 +25,12 @@ const Hero = () => {
             className={styles.logo}
           />
           <div className="my-2">
-            <h1 className="mb-1">
-              Scandinavia´s <span className="text-underline">BIGGEST</span>
+            <h1>We're back!</h1>
+            <h4 className="my-1">
+              Scandinavia´s <span className="text-underline">GREATEST</span>
               <br />
               fighting game tournament
-            </h1>
+            </h4>
             <p className="fw-bold">
               9th - 11th June 2023
               <br />

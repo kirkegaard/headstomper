@@ -17,7 +17,11 @@
 }
 
 .small {
-  @include font-size(0.8rem);
+  @include font-size(0.7rem);
+  padding: 0.3rem 0.6rem;
+}
+.small:hover {
+  transform: none;
 }
 
 .large {
