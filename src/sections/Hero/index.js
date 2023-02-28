@@ -25,7 +25,7 @@ const Hero = () => {
             className={styles.logo}
           />
           <div className="my-2">
-            <h1>We're back!</h1>
+            <h1>We´re back!</h1>
             <h4 className="my-1">
               Scandinavia´s <span className="text-underline">GREATEST</span>
               <br />
