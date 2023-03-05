@@ -5,6 +5,8 @@ import Button from "@/components/Button";
 
 import styles from "./index.module.css";
 
+const REGISTER_ENABLED = !!+process.env.NEXT_PUBLIC_REGISTER_ENABLED;
+
 const Information = () => {
   return (
     <Section className={styles.container}>
@@ -93,7 +95,9 @@ const Information = () => {
               <b>Registration deadline:</b> 1 May 2020
             </p>
 
-            <Button>Register now</Button>
+            <Button>
+              {REGISTER_ENABLED ? "Register now" : "Register TBA"}
+            </Button>
           </div>
         </Grid>
       </Container>

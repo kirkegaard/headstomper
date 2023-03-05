@@ -4,11 +4,8 @@ const Event = ({ props }) => {
   return (
     <div className={styles.container}>
       <h3 className={styles.title}>{props.title}</h3>
-      <p>
-        {props.desc}
-        <br />
-        <small>Played on: {props.playedOn}</small>
-      </p>
+      <p className="mb-0">{props.desc}</p>
+      {props.playedOn && <small>Played on: {props.playedOn}</small>}
     </div>
   );
 };

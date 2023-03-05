@@ -7,8 +7,8 @@ const Sponsors = () => {
   return (
     <Section className={styles.container}>
       <Container>
-        <h1>Sponsors</h1>
-        <p>List of sponsors</p>
+        <h1 className="title">Sponsors</h1>
+        <p>TBA</p>
       </Container>
     </Section>
   );

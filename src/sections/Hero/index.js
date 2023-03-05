@@ -3,6 +3,8 @@ import Container from "@/components/Container";
 
 import styles from "./index.module.css";
 
+const REGISTER_ENABLED = !!+process.env.NEXT_PUBLIC_REGISTER_ENABLED;
+
 const Hero = () => {
   return (
     <div className={styles.container}>
@@ -37,7 +39,9 @@ const Hero = () => {
               Malmö, Sweden
             </p>
           </div>
-          <Button size="large">Register now</Button>
+          <Button size="large">
+            {REGISTER_ENABLED ? "Register now" : "Register TBA"}
+          </Button>
         </div>
       </Container>
     </div>
