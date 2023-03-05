@@ -29,7 +29,7 @@ const Hero = () => {
           <div className="my-2">
             <h1>We´re back!</h1>
             <h4 className="my-1">
-              Scandinavia´s <span className="text-underline">GREATEST</span>
+              Scandinavia´s <span className="text-highlight">GREATEST</span>
               <br />
               fighting game tournament
             </h4>

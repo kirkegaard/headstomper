@@ -19,9 +19,14 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+
 .text-underline {
   color: var(--color-warning);
   border-bottom: 3px solid var(--color-warning);
+}
+
+.text-highlight {
+  color: var(--color-warning);
 }
 
 .d-none {
