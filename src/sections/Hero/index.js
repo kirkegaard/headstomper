@@ -1,9 +1,7 @@
-import Button from "@/components/Button";
 import Container from "@/components/Container";
+import Register from "@/components/Register";
 
 import styles from "./index.module.css";
-
-const REGISTER_ENABLED = !!+process.env.NEXT_PUBLIC_REGISTER_ENABLED;
 
 const Hero = () => {
   return (
@@ -39,9 +37,7 @@ const Hero = () => {
               Malmö, Sweden
             </p>
           </div>
-          <Button size="large">
-            {REGISTER_ENABLED ? "Register now" : "Register TBA"}
-          </Button>
+          <Register size="large" />
         </div>
       </Container>
     </div>

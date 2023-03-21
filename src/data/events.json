@@ -1,8 +1,19 @@
 {
   "main": [
     {
-      "title": "TBA",
-      "desc": "Coming soon!"
+      "title": "Street Fighter 6",
+      "desc": "Street Fighter 6 is an upcoming fighting game developed and published by Capcom.",
+      "playedOn": "Console"
+    },
+    {
+      "title": "Tekken 7",
+      "desc": "Tekken 7 is a fighting game developed and published by Bandai Namco Entertainment.",
+      "playedOn": "Console"
+    },
+    {
+      "title": "Guilty Gear -Strive-",
+      "desc": "Guilty Gear Strive is a fighting video game developed and published by Arc System Works.",
+      "playedOn": "Console"
     }
   ],
   "side": [

@@ -1,9 +1,17 @@
+import { createElement } from "react";
 import cx from "classnames";
 import styles from "./index.module.scss";
 
-const Button = ({ children, size, variant = "default", ...rest }) => {
+const Button = ({
+  children,
+  size,
+  variant = "default",
+  as = "button",
+  ...rest
+}) => {
+  const Component = as;
   return (
-    <button
+    <Component
       className={cx(
         styles.button,
         {
@@ -17,7 +25,7 @@ const Button = ({ children, size, variant = "default", ...rest }) => {
       {...rest}
     >
       {children}
-    </button>
+    </Component>
   );
 };
 

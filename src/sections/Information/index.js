@@ -2,10 +2,9 @@ import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Grid from "@/components/Grid";
 import Button from "@/components/Button";
+import Register from "@/components/Register";
 
 import styles from "./index.module.css";
-
-const REGISTER_ENABLED = !!+process.env.NEXT_PUBLIC_REGISTER_ENABLED;
 
 const Information = () => {
   return (
@@ -14,24 +13,56 @@ const Information = () => {
         <h1 className="title">Information</h1>
         <Grid>
           <div>
+            <h3 className="title">Register</h3>
+            <ul className="mb-1 list-unstyled">
+              <li>
+                <b>Regular pass:</b> 50€ <small>(until 2023/05/19)</small>
+              </li>
+              <li>
+                <b>Late pass:</b> 55€ <small>(until 2023/06/02)</small>
+              </li>
+              <li>
+                <b>Super late pass:</b> 80€ <small>(until 2023/06/06)</small>
+              </li>
+            </ul>
+            <ul className="mb-1 list-unstyled">
+              <li>
+                <b>Tournament Entry:</b> 10€ <small>(per tournament)</small>
+              </li>
+              <li>
+                <b>Spectator:</b> 25€ <small>(until 2023/06/11 10:00)</small>
+              </li>
+            </ul>
+
+            <p>
+              All passes give full access to the venue itself all days{" "}
+              <b>including free ice cream, popcorn, coffee and tea.</b>
+            </p>
+
+            <p>
+              After registration is closed, spectator passes will only be
+              available for purchase at the venue.
+            </p>
+
+            <p>
+              <b>Registration deadline:</b> June 6th 2023
+            </p>
+
+            <Register />
+          </div>
+          <div>
             <h3 className="title">Venue</h3>
             <p>
               Again this year the event will be held at{" "}
-              <a href="https://www.nordicchoicehotels.com/hotels/sweden/malmo/quality-hotel-view/special-offers/headstomper-2020/">
+              <a href="https://www.nordicchoicehotels.com/hotels/sweden/malmo/quality-hotel-view/">
                 Quality Hotel View
               </a>
               . The hotel is fully air conditioned, features multiple stages and
               even a bar!
             </p>
             <p>
-              Quality Hotel View will again this year provide us with free ice
-              cream, popcorn and coffee!
-            </p>
-            <p>
-              We have an exclusive deal with Quality Hotel View (same as the
-              venue) with flat rates for rooms that will stay the same forever.
-              Regular rates may be higher or lower so make sure to check before
-              booking.
+              Use the discount code: <b>2110GR026840</b> when registering by
+              phone and e-mail to get an exclusive deal on your room!
             </p>
             <h5>Address</h5>
             <p>
@@ -40,11 +71,13 @@ const Information = () => {
               215 32
               <br />
               Malmö, Sweden
+              <br />
+              +46 40 37 41 00
+              <br />
+              <a href="mailto:q.view@choice.se?body=Discount code: 2110GR026840">
+                q.view@choice.se
+              </a>
             </p>
-
-            <h5>Phone</h5>
-            <p>+46 40 37 41 00</p>
-            <Button>Book room</Button>
           </div>
           <div>
             <h3 className="title">Travel</h3>
@@ -55,49 +88,15 @@ const Information = () => {
             </p>
             <h5>From Copenhagen</h5>
             <p>
-              Take the train from Copenhagen Airport towards Malmø Sweden and
+              Take the train from Copenhagen Airport towards Malmö Sweden and
               get off at the first stop, Hyllie station. The venue will be
               located right outside the trainstation.
             </p>
-            <h5>From Malmø</h5>
+            <h5>From Malmö</h5>
             <p>
-              Take the train from Malmø towards Copenhagen. Get off at Hyllie
+              Take the train from Malmö towards Copenhagen. Get off at Hyllie
               station.
             </p>
-          </div>
-          <div>
-            <h3 className="title">Register</h3>
-            <ul className="mb-1 list-unstyled">
-              <li>
-                <b>Regular Pass:</b> 35 €
-              </li>
-              <li>
-                <b>Tournament Entry:</b> 10 € per tournament
-              </li>
-              <li>
-                <b>Spectator Pass:</b> 10 €
-              </li>
-            </ul>
-
-            <p>
-              Regular passes are required to enter main lineup tournaments,
-              whereas Spectator passes only give access to enter
-              side-tournament. Both passes give full access to the venue itself
-              all days.
-            </p>
-
-            <p>
-              After closing registration, Spectator passes are only available
-              for purchase on site at the venue.
-            </p>
-
-            <p>
-              <b>Registration deadline:</b> 1 May 2020
-            </p>
-
-            <Button>
-              {REGISTER_ENABLED ? "Register now" : "Register TBA"}
-            </Button>
           </div>
         </Grid>
       </Container>

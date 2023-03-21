@@ -5,15 +5,20 @@
 
   color: inherit;
   padding: 0.8rem 1.2rem;
-  border: 0;
+  border: none;
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: transform 125ms ease-out;
+  font-weight: normal;
+  display: inline-block;
 }
 
 .button:hover {
-  transform: scale(1.15);
+  transform: scale(1.06);
+  // transform-box: fill-box;
+  // transform-origin: 50% 50%;
   filter: brightness(110%);
+  border: none;
 }
 
 .small {
@@ -25,7 +30,7 @@
 }
 
 .large {
-  @include font-size(1.4rem);
+  @include font-size(1.3rem);
 }
 
 .default {
