@@ -21,9 +21,6 @@ const Information = () => {
               <li>
                 <b>Late pass:</b> 55€ <small>(until 2023/06/02)</small>
               </li>
-              <li>
-                <b>Super late pass:</b> 80€ <small>(until 2023/06/06)</small>
-              </li>
             </ul>
             <ul className="mb-1 list-unstyled">
               <li>
@@ -86,16 +83,16 @@ const Information = () => {
               just one stop away! All flying guests are recommended to use this
               airport as it´s the cloest.
             </p>
-            <h5>From Copenhagen</h5>
+            <h5>From Copenhagen Airport</h5>
             <p>
               Take the train from Copenhagen Airport towards Malmö Sweden and
               get off at the first stop, Hyllie station. The venue will be
               located right outside the trainstation.
             </p>
-            <h5>From Malmö</h5>
+            <h5>From Malmö Airport</h5>
             <p>
               Take the train from Malmö towards Copenhagen. Get off at Hyllie
-              station.
+              station. However Copenhagen is much closer!
             </p>
           </div>
         </Grid>
