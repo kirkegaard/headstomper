@@ -2,29 +2,93 @@
   "main": [
     {
       "title": "Street Fighter 6",
+      "url": "https://www.start.gg/tournament/headstomper-2023/event/street-fighter-6/overview",
       "desc": "Street Fighter 6 is an upcoming fighting game developed and published by Capcom.",
       "playedOn": "Console"
     },
     {
       "title": "Tekken 7",
+      "url": "https://www.start.gg/tournament/headstomper-2023/event/tekken-7-1/overview",
       "desc": "Tekken 7 is a fighting game developed and published by Bandai Namco Entertainment.",
       "playedOn": "Console"
     },
     {
       "title": "Guilty Gear -Strive-",
+      "url": "https://www.start.gg/tournament/headstomper-2023/event/guilty-gear-strive/overview",
       "desc": "Guilty Gear Strive is a fighting video game developed and published by Arc System Works.",
       "playedOn": "Console"
     },
     {
       "title": "Granblue Fantasy: Versus",
+      "url": "https://www.start.gg/tournament/headstomper-2023/event/granblue-fantasy-versus/overview",
       "desc": "Granblue Fantasy Versus is a 2.5D fighting game developed by Arc System Works.",
       "playedOn": "Console"
     }
   ],
   "side": [
     {
-      "title": "TBA",
-      "desc": "Coming soon!"
+      "title": "BlazBlue: Central Fiction",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/blazblue-cf/overview"
+    },
+    {
+      "title": "Guilty Gear Xrd REV2",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/guilty-gear-xrd/overview"
+    },
+    {
+      "title": "The King of Fighters XV",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/king-of-fighters-xv/overview"
+    },
+    {
+      "title": "Street Fighter III: 3rd Strike",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/3s/overview"
+    },
+    {
+      "title": "Ultra Street Fighter IV",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/ultra-street-fighter-iv/overview"
+    },
+    {
+      "title": "SAMURAI SHODOWN",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/samurai-shodown/overview"
+    },
+    {
+      "title": "Skullgirls: 2nd Encore",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/skullgirls/overview"
+    },
+    {
+      "title": "DRAGON BALL FighterZ",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/dbfz/overview"
+    },
+    {
+      "title": "Melty Blood: Type Lumina",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/melty-blood-type-lumina/overview"
+    },
+    {
+      "title": "Lethal League Blaze",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/lethal-league-blaze/overview"
+    },
+    {
+      "title": "Super Smash Bros. Ultimate",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/super-smash-bros-ultimate/overview"
+    },
+    {
+      "title": "Koihime Enbu RyoRaiRai",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/koihime-enbu/overview"
+    },
+    {
+      "title": "Super Smash Bros. Melee",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/super-smash-bros-melee/overview"
+    },
+    {
+      "title": "Super Street Fighter II Turbo",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/st/overview"
+    },
+    {
+      "title": "Guilty Gear XX Accent Core Plus R",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/guilty-gear-acpr/overview"
+    },
+    {
+      "title": "Melty Blood Actress Again Current Code",
+      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/melty-blood-aacc/overview"
     }
   ]
 }

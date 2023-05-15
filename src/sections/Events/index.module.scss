@@ -1,0 +1,40 @@
+@import "~rfs/scss";
+
+.container {
+  background-color: #111;
+}
+
+.sideEvent h3 {
+  @include font-size(0.9rem);
+  margin: 0;
+}
+
+.sideEvent {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(0px, auto);
+  gap: 1rem;
+}
+
+@media (min-width: 565px) {
+  .sideEvent {
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(0px, auto);
+  }
+}
+
+@media (min-width: 768px) {
+  .sideEvent {
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(0px, auto);
+  }
+}
+
+@media (min-width: 992px) {
+  .sideEvent {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(0px, auto);
+  }
+}

@@ -4,5 +4,7 @@
 .title {
   margin-bottom: 0.6rem;
 }
-.title:first-child {
+
+.title a {
+  color: var(--color-white);
 }
