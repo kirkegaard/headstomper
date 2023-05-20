@@ -40,7 +40,15 @@ const Information = () => {
               After registration is closed, spectator passes will only be
               available for purchase at the venue.
             </p>
-
+            <p>
+              <b className="text-highlight">
+                Due to a greater interest than expected registration for both
+                player passes and spectators passes are on currently hold.
+                <br />
+                We are currently investigating the possibility of raising the
+                cap.
+              </b>
+            </p>
             <p>
               <b>Registration deadline:</b> June 6th 2023
             </p>
