@@ -5,7 +5,7 @@ const REGISTER_LINK = process.env.NEXT_PUBLIC_REGISTER_LINK;
 
 const Register = (props) => (
   <Button {...props} as="a" href={REGISTER_LINK}>
-    {REGISTER_ENABLED ? "Register now" : "Register TBA"}
+    {REGISTER_ENABLED ? "Register now" : "Registration closed"}
   </Button>
 );
 

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Container from "@/components/Container";
 import Register from "@/components/Register";
 
@@ -19,10 +21,12 @@ const Hero = () => {
           ></video>
         </div>
         <div className={styles.overlay}>
-          <img
+          <Image
+            className={styles.logo}
             src="/assets/images/logo.png"
             alt="Headstomper"
-            className={styles.logo}
+            width={914}
+            height={429}
           />
           <div className="my-2">
             <h1>We´re back!</h1>
