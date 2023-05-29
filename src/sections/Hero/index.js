@@ -29,9 +29,10 @@ const Hero = () => {
             height={429}
           />
           <div className="my-2">
-            <h1>We´re back!</h1>
+            <h1>We&apos;re back!</h1>
             <h4 className="my-1">
-              Scandinavia´s <span className="text-highlight">GREATEST</span>
+              Scandinavia&apos;s{" "}
+              <span className="text-highlight">GREATEST</span>
               <br />
               fighting game tournament
             </h4>

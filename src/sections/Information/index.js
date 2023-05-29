@@ -43,7 +43,7 @@ const Information = () => {
             <p>
               <b className="text-highlight">
                 *Due to a greater interest than expected registration for both
-                player passes and spectators passes are now closed as we´ve
+                player passes and spectators passes are now closed as we&apos;ve
                 reached our cap. It will also not be possible to buy spectator
                 passes at the venue.
               </b>
