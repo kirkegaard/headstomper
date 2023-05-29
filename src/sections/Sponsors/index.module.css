@@ -23,7 +23,10 @@
 }
 
 .sponsors img {
-  width: 175px;
+  width: 200px;
   height: auto;
   margin: 0 auto;
+}
+.sponsors img.smoll {
+  width: 125px;
 }

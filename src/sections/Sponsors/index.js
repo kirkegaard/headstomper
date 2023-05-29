@@ -18,8 +18,16 @@ const Sponsors = () => {
         <div className={styles.sponsors}>
           <Image alt="Powered by PlayStation" src={playstation} />
           <Image alt="Powered by hyper x" src={hyperx} />
-          <Image alt="Copenhagen Malmø FGC" src={coma} />
-          <Image alt="Copenhagen Esport" src={cphEsports} />
+          <Image
+            className={styles.smoll}
+            alt="Copenhagen Malmø FGC"
+            src={coma}
+          />
+          <Image
+            className={styles.smoll}
+            alt="Copenhagen Esport"
+            src={cphEsports}
+          />
         </div>
       </Container>
     </Section>
