@@ -12,9 +12,9 @@ const Thankyou = () => {
         <div className={styles.maxWidth}>
           <h1 className="title">Thank you!</h1>
           <p>
-            It's been an amazing year. Thank you all for joining us in playing
-            the games that we love, meet new and old friends, and of course eat
-            ice cream! We hope to see you all again next year!
+            It&apos;s been an amazing year. Thank you all for joining us in
+            playing the games that we love, meet new and old friends, and of
+            course eat ice cream! We hope to see you all again next year!
           </p>
           <p>
             In the mean time be sure to follow us on{" "}
