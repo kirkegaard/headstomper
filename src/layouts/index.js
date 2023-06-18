@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 const Layout = ({
   metadata = {
     title: "Headstomper",
-    description: "We´re back! Scandinavia´s GREATEST fighting game tournament",
+    description:
+      "Thank you for playing Scandinavia´s GREATEST fighting game tournament",
   },
   children,
 }) => {
