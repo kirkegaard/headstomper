@@ -1,8 +1,11 @@
 import styles from "./index.module.css";
 
-const Section = ({ children, className }) => {
+const Section = ({ children, className, ...rest }) => {
   return (
-    <section className={`${styles.container} ${className ? className : ""}`}>
+    <section
+      className={`${styles.container} ${className ? className : ""}`}
+      {...rest}
+    >
       {children}
     </section>
   );

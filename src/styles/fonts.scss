@@ -2,22 +2,31 @@ p {
   line-height: 1.4rem;
 }
 
+small {
+  @include font-size(0.7rem);
+}
+
 h1 {
   @include font-size(2.5rem);
 }
 
 h2 {
+  font-weight: normal;
   @include font-size(2rem);
 }
 
 h3 {
+  font-weight: normal;
   @include font-size(1.75rem);
 }
 
 h4 {
+  font-weight: normal;
   @include font-size(1.5rem);
 }
 
 h5 {
   @include font-size(1.15rem);
+  font-weight: normal;
+  margin-bottom: 0.2rem;
 }

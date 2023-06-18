@@ -22,6 +22,10 @@
   }
 }
 
+.sponsors a:hover {
+  border-bottom: none;
+}
+
 .sponsors img {
   width: 200px;
   height: auto;

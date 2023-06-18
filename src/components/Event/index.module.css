@@ -8,3 +8,25 @@
 .title a {
   color: var(--color-white);
 }
+
+.results {
+  list-style: none;
+}
+
+.results li:nth-child(1) {
+  color: #ffd700;
+}
+.results li:nth-child(2) {
+  color: #c0c0c0;
+}
+.results li:nth-child(3) {
+  color: #cd7f32;
+}
+
+.player {
+  font-size: 0.8rem;
+}
+
+.hide {
+  display: none;
+}

@@ -7,12 +7,14 @@ const Button = ({
   size,
   variant = "default",
   as = "button",
+  className,
   ...rest
 }) => {
   const Component = as;
   return (
     <Component
       className={cx(
+        className,
         styles.button,
         {
           [styles.small]: size === "small",
@@ -20,6 +22,7 @@ const Button = ({
         },
         {
           [styles.default]: variant === "default",
+          [styles.outline]: variant === "outline",
         }
       )}
       {...rest}

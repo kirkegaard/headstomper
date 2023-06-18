@@ -4,25 +4,133 @@
       "title": "Street Fighter 6",
       "url": "https://www.start.gg/tournament/headstomper-2023/event/street-fighter-6/overview",
       "desc": "Street Fighter 6 is an upcoming fighting game developed and published by Capcom.",
-      "playedOn": "PS5 vers. on PS5"
+      "playedOn": "PS5 vers. on PS5",
+      "streams": [
+        {
+          "title": "Day 3: Top 32",
+          "url": "https://www.twitch.tv/videos/1843409463"
+        },
+        {
+          "title": "Day 3: Top: 4",
+          "url": "https://www.twitch.tv/videos/1843408910?t=9h51m56s"
+        }
+      ],
+      "results": [
+        "1. Falcon|Mister Crimson (Dhalsim)",
+        "2. Popibluebeast (Cammy)",
+        "3. TKR (Chun-Li)",
+        "4. VG|MysticSmash (JP)",
+        "5. KS|Rikemansbarnet (Juri, Lily)",
+        "5. Suleymon (Kimberly)",
+        "7. WIZ|Dragoi (JP, Manon)",
+        "7. Juni (Ken)",
+        "9. Elias (Cammy)",
+        "9. EmmieMcD (Juri)",
+        "9. KS|Torpan (Ken)",
+        "9. KS|Ixion (Dee Jay)",
+        "13. Frogmaster|Yosh (Luke)",
+        "13. M80|EndingWalker (Ryu)",
+        "13. LoHii (JP)",
+        "13. Brickterium"
+      ]
     },
     {
       "title": "Tekken 7",
       "url": "https://www.start.gg/tournament/headstomper-2023/event/tekken-7-1/overview",
       "desc": "Tekken 7 is a fighting game developed and published by Bandai Namco Entertainment.",
-      "playedOn": "PS4 vers. on PS5"
+      "playedOn": "PS4 vers. on PS5",
+      "streams": [
+        {
+          "title": "Day 1: Exhibition day",
+          "url": "https://www.twitch.tv/videos/1841888839"
+        },
+
+        {
+          "title": "Day 2: Pools",
+          "url": "https://www.twitch.tv/videos/1842546566?t=3h6m16s"
+        },
+        {
+          "title": "Day 3: Top 32",
+          "url": "https://www.twitch.tv/videos/1843408910"
+        }
+      ],
+      "results": [
+        "1. HK Jr. (Heihachi)",
+        "2. Kiba|Kkokkoma (Feng, Kunimitsu, Leroy, Lidia)",
+        "3. Falcon|JoKa (Feng, Zafina)",
+        "4. BIG|Sephiblack (Miguel)",
+        "5. GL|Tetsu (Claudio, Zafina)",
+        "7. CRaZY|SuperAkouma (Akuma)",
+        "7. SFO|Evil46 (Ganryu, Gigas)",
+        "9. Frizen (Steve)",
+        "9. Tibetano (Ganryu)",
+        "9. Jopelix (Claudio)",
+        "9. Gosain (Law)",
+        "13. Karios (Lucky Chloe)",
+        "13. RIZE|Ayorichie (Leo)",
+        "13. TDB|Draconis (Heihachi)",
+        "13. XIT|Shirdel (Alisa)"
+      ]
     },
     {
       "title": "Guilty Gear -Strive-",
       "url": "https://www.start.gg/tournament/headstomper-2023/event/guilty-gear-strive/overview",
       "desc": "Guilty Gear Strive is a fighting video game developed and published by Arc System Works.",
-      "playedOn": "PS4 vers. on PS5"
+      "playedOn": "PS4 vers. on PS5",
+      "streams": [
+        {
+          "title": "Day 2: Pools",
+          "url": "https://www.twitch.tv/videos/1842546566"
+        }
+      ],
+      "results": [
+        "1. Zando (Ramlethal)",
+        "2. BC|Jonathan Tene (Zato-1)",
+        "3. Supernoon (Bridget)",
+        "4. ONi|NBNHMR (Nagoriyuki)",
+        "5. SYG|Jetstream (Nagoriyuki)",
+        "5. Sorani (Millia)",
+        "7. ONi|TigerPop (Happy Chaos)",
+        "7. Ryo (Happy Chaos)",
+        "9. Kafka (Zato-1)",
+        "9. GQ|Skarfelt (Millia)",
+        "9. Oplon|Skyll (Sol)",
+        "9. TSM|Leffen (Happy Chaos)",
+        "13. VG|MysticSmash (Axl)",
+        "13. TryKeazer (Sol)",
+        "13. Smoib (Goldlewis)",
+        "13. NSxC|PataChu (Sin)"
+      ]
     },
     {
       "title": "Granblue Fantasy: Versus",
       "url": "https://www.start.gg/tournament/headstomper-2023/event/granblue-fantasy-versus/overview",
       "desc": "Granblue Fantasy Versus is a 2.5D fighting game developed by Arc System Works.",
-      "playedOn": "PS4 vers. on PS4"
+      "playedOn": "PS4 vers. on PS4",
+      "streams": [
+        {
+          "title": "Day 1: Exhibition day",
+          "url": "https://www.twitch.tv/videos/1841888839?t=3h6m4s"
+        }
+      ],
+      "results": [
+        "1. WIZ|Dragoi (Belial, Seox)",
+        "2. Svampen (Zeta)",
+        "3. mirri (Eustace)",
+        "4. Dudeakoff (Seox, Metera)",
+        "5. MrPOW (Metera)",
+        "5. Socky (Charlotta)",
+        "7. Sonic-san (Belial, Gran)",
+        "7. NecronNeo (Beelzebub)",
+        "9. Virum (Percival)",
+        "9. PRM|BimboOlivia (Avatar Belial)",
+        "9. Fusilero (Zeta)",
+        "9. GodflashThunder (Narmaya, Ladiva)",
+        "13. Arefu (Djeeta)",
+        "13. Zaveid (Zooey)",
+        "13. Desselie (Metera)",
+        "13. EH|MajinTenshinhan (Metera)"
+      ]
     }
   ],
   "side": [

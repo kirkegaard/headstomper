@@ -36,7 +36,9 @@ a {
 }
 a:hover {
   filter: brightness(110%);
-  border-bottom: 2px solid var(--color-default);
+  text-decoration: underline;
+  text-decoration-color: var(--color-default);
+  // border-bottom: 2px solid var(--color-default);
 }
 
 p {

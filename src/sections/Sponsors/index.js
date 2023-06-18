@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 import Container from "@/components/Container";
@@ -16,18 +17,24 @@ const Sponsors = () => {
       <Container>
         <h1 className="title">Sponsors</h1>
         <div className={styles.sponsors}>
-          <Image alt="Powered by PlayStation" src={playstation} />
-          <Image alt="Powered by hyper x" src={hyperx} />
+          <Link href="https://playstation.com">
+            <Image alt="Powered by PlayStation" src={playstation} />
+          </Link>
+          <Link href="https://hyperx.com/">
+            <Image alt="Powered by hyper x" src={hyperx} />
+          </Link>
           <Image
             className={styles.smoll}
             alt="Copenhagen Malmø FGC"
             src={coma}
           />
-          <Image
-            className={styles.smoll}
-            alt="Copenhagen Esport"
-            src={cphEsports}
-          />
+          <Link href="https://cphesport.com/">
+            <Image
+              className={styles.smoll}
+              alt="Copenhagen Esport"
+              src={cphEsports}
+            />
+          </Link>
         </div>
       </Container>
     </Section>

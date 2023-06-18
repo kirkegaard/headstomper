@@ -33,7 +33,7 @@ const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
 };
 
-const Slider = ({ images }) => {
+const Slider = ({ folder = "./", images }) => {
   const [[page, direction], setPage] = useState([0, 0]);
 
   const imageIndex = wrap(0, images.length, page);
@@ -57,7 +57,7 @@ const Slider = ({ images }) => {
             width="1280"
             height="853"
             key={page}
-            src={images[imageIndex]}
+            src={`${folder}/${images[imageIndex]}`}
             custom={direction}
             variants={variants}
             initial="enter"
