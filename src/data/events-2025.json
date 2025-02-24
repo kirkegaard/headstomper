@@ -1,17 +1,17 @@
 {
   "main": [
     {
-      "title": "Street Fighter 6",
-      "url": "https://www.streetfighter.com/6",
-      "desc": "Street Fighter 6 offers a highly evolved combat system with three control types - Classic, Modern and Dynamic - allowing you to quickly play to your skill level",
+      "title": "Tekken 8",
+      "url": "https://www.tekken.com/8",
+      "desc": "TEKKEN 8 continues the tragic saga of the Mishima and Kazama bloodlines and their world-shaking father-and-son grudge matches",
       "playedOn": "PS5 vers. on PS5",
       "streams": null,
       "results": null
     },
     {
-      "title": "Tekken 8",
-      "url": "https://www.tekken.com/8",
-      "desc": "TEKKEN 8 continues the tragic saga of the Mishima and Kazama bloodlines and their world-shaking father-and-son grudge matches",
+      "title": "Street Fighter 6",
+      "url": "https://www.streetfighter.com/6",
+      "desc": "Street Fighter 6 offers a highly evolved combat system with three control types - Classic, Modern and Dynamic - allowing you to quickly play to your skill level",
       "playedOn": "PS5 vers. on PS5",
       "streams": null,
       "results": null
