@@ -13,8 +13,8 @@ export default function Home() {
       <Hero />
       <Upcoming />
       <Events />
-      <Stats />
       <Gallery />
+      <Stats />
       <Contact />
     </Layout>
   );

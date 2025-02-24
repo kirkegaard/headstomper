@@ -18,12 +18,12 @@ const Events = () => {
           ))}
         </Grid>
 
-        <h1 className="title">Side Events</h1>
-        <Grid className={styles.sideEvent}>
-          {data.side.map((props, index) => (
-            <Event key={index} {...props} />
-          ))}
-        </Grid>
+        {/* <h1 className="title">Side Events</h1> */}
+        {/* <Grid className={styles.sideEvent}> */}
+        {/*   {data.side.map((props, index) => ( */}
+        {/*     <Event key={index} {...props} /> */}
+        {/*   ))} */}
+        {/* </Grid> */}
       </Container>
     </Section>
   );
