@@ -2,7 +2,7 @@ import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Grid from "@/components/Grid";
 import Event from "@/components/Event";
-import data from "@/data/events.json";
+import data from "@/data/events-2025.json";
 
 import styles from "./index.module.scss";
 

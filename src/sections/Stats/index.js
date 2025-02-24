@@ -3,7 +3,7 @@ import Section from "@/components/Section";
 import Grid from "@/components/Grid";
 import Event from "@/components/Event";
 
-import data from "@/data/events.json";
+import data from "@/data/events-2023.json";
 
 import styles from "./index.module.css";
 
@@ -16,17 +16,6 @@ const Stats = () => {
           {data.main.map((props, index) => (
             <Event key={index} {...props} />
           ))}
-
-          <Event
-            title="Side events"
-            url="https://www.start.gg/tournament/side-events-headstomper-2023/events"
-            streams={[
-              {
-                title: "Neophos",
-                url: "https://www.twitch.tv/neophos/videos?filter=archives&sort=time",
-              },
-            ]}
-          />
         </Grid>
       </Container>
     </Section>
