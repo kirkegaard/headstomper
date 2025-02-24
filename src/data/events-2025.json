@@ -44,11 +44,43 @@
   "side": [
     {
       "title": "Street Fighter III: 3rd Strike",
-      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/3s/overview"
+      "url": null
     },
     {
       "title": "Ultra Street Fighter IV",
-      "url": "https://www.start.gg/tournament/side-events-headstomper-2023/event/ultra-street-fighter-iv/overview"
+      "url": null
+    },
+    {
+      "title": "Sega Rally Championship",
+      "url": null
+    },
+    {
+      "title": "IK+",
+      "url": null
+    },
+    {
+      "title": "ClayFighter",
+      "url": null
+    },
+    {
+      "title": "Waku Waku 7",
+      "url": null
+    },
+    {
+      "title": "Fight Crab",
+      "url": null
+    },
+    {
+      "title": "Footsies",
+      "url": null
+    },
+    {
+      "title": "Primal Rage",
+      "url": null
+    },
+    {
+      "title": "TMNT: Tournament Fighters",
+      "url": null
     }
   ]
 }
