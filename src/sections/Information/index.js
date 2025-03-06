@@ -1,7 +1,6 @@
 import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Grid from "@/components/Grid";
-import Button from "@/components/Button";
 import Register from "@/components/Register";
 
 import styles from "./index.module.css";
@@ -16,40 +15,38 @@ const Information = () => {
             <h3 className="title">Register</h3>
             <ul className="mb-1 list-unstyled">
               <li>
-                <b>Regular pass:</b> 50€ <small>(until 2023/05/19)</small>
+                <s>
+                  <b>Early bird:</b> €50
+                </s>
+                <br />
+                <small>(Only 100 available)</small>
               </li>
               <li>
-                <b>Late pass:</b> 55€ <small>(until 2023/06/02)</small>
-              </li>
-            </ul>
-            <ul className="mb-1 list-unstyled">
-              <li>
-                <b>Tournament Entry:</b> 10€ <small>(per tournament)</small>
+                <b>Standard pass:</b> €60 <br />
+                <small>(For main and side events)</small>
               </li>
               <li>
-                <b>Spectator:</b> 25€ <small>(until 2023/06/11 10:00)</small>
+                <b>Community pass:</b> €40 <br />
+                <small>(For spectator and side events)</small>
               </li>
             </ul>
 
             <p>
               All passes give full access to the venue itself all days{" "}
-              <b>including free ice cream, popcorn, coffee and tea.</b>
+              <b>including free ice cream, popcorn, coffee and tea.</b> Register
+              now and customize your own player badge with special artwork and
+              your gamertag!
             </p>
 
             <p>
-              After registration is closed, spectator passes will only be
-              available for purchase at the venue.*
-            </p>
-            <p>
-              <b className="text-highlight">
-                *Due to a greater interest than expected registration for both
-                player passes and spectators passes are now closed as we&apos;ve
-                reached our cap. It will also not be possible to buy spectator
-                passes at the venue.
-              </b>
+              After registration is closed, community passes will only be
+              available for purchase at the venue.
             </p>
 
             <Register />
+            <p>
+              <small>Last day to register is May 23rd</small>
+            </p>
           </div>
           <div>
             <h3 className="title">Venue</h3>

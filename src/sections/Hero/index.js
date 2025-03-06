@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/Container";
-import Button from "@/components/Button";
+import Register from "@/components/Register";
 
 import styles from "./index.module.css";
 
@@ -33,19 +33,12 @@ const Hero = () => {
               Scandinavia&apos;s{" "}
               <span className="text-highlight fw-bold">GREATEST</span> fighting
               <br />
-              game tournament is back!
+              game tournament is back! <small>So is the ice cream...</small>
             </h5>
             <h1 className="my-2">
               <span className="fw-bold">30th May - 1st June 2025</span>
             </h1>
-            <Button
-              variant="outline"
-              size="large"
-              as="a"
-              href="https://x.com/Headstomper"
-            >
-              Follow us on twitter
-            </Button>
+            <Register />
           </div>
         </div>
       </Container>

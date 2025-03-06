@@ -1,7 +1,7 @@
 import Layout from "@/layouts";
 
 import Hero from "@/sections/Hero";
-import Upcoming from "@/sections/Information/Upcoming";
+import Information from "@/sections/Information";
 import Contact from "@/sections/Contact";
 import Gallery from "@/sections/Gallery";
 import Stats from "@/sections/Stats";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <Layout>
       <Hero />
-      <Upcoming />
+      <Information />
       <Events />
       <Gallery />
       <Stats />
