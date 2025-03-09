@@ -63,7 +63,7 @@ const Information = () => {
             </p>
             <p>
               Rooms are limited and it is a busy weekend so book now! Remember
-              to let them know that you're there for Headstomper!
+              to let them know that you´re there for Headstomper!
             </p>
             <h5>Address</h5>
             <p>
