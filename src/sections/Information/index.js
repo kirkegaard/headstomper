@@ -58,9 +58,12 @@ const Information = () => {
               . The hotel is fully air conditioned, features multiple stages and
               even a bar!
             </p>
+            <p className="lead">
+              Use the discount code: <b>Headstomper2025</b>
+            </p>
             <p>
-              Use the discount code: <b>2110GR026840</b> when registering by
-              phone and e-mail to get an exclusive deal on your room!
+              Rooms are limited and it is a busy weekend so book now! Remember
+              to let them know that you're there for Headstomper!
             </p>
             <h5>Address</h5>
             <p>
@@ -70,7 +73,7 @@ const Information = () => {
               <br />
               Malmö, Sweden
               <br />
-              +46 40 37 41 00
+              (+460) 40 37 41 00
               <br />
               <a href="mailto:q.view@choice.se?body=Discount code: 2110GR026840">
                 q.view@choice.se
