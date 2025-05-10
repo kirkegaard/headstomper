@@ -22,7 +22,10 @@ const Information = () => {
                 <small>(Only 100 available)</small>
               </li>
               <li>
-                <b>Standard pass:</b> €60 <br />
+                <s>
+                  <b>Standard pass:</b> €60 <br />
+                </s>
+                <b>Late pass:</b> €70 <br />
                 <small>(For main and side events)</small>
               </li>
               <li>
