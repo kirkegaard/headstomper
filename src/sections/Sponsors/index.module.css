@@ -27,8 +27,9 @@
 }
 
 .sponsors img {
-  width: 200px;
+  width: 300px;
   height: auto;
+  max-height: 90px;
   margin: 0 auto;
 }
 .sponsors img.smoll {
