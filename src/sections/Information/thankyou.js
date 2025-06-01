@@ -11,15 +11,23 @@ const Thankyou = () => {
       <Container>
         <div className={styles.maxWidth}>
           <h1 className="title">Thank you!</h1>
-          <p>
-            It&apos;s been an amazing year. Thank you all for joining us in
-            playing the games that we love, meet new and old friends, and of
-            course eat ice cream! We hope to see you all again next year!
+          <p className="fw-bold">
+            It’s been an amazing year — and an even more amazing event.
           </p>
           <p>
-            In the mean time be sure to follow us on{" "}
-            <Link href="https://twitter.com/headstomper">twitter</Link> for all
-            the news about <span className="fw-bold">Headstomper 2024</span>
+            Thank you all for making it so special by joining us to play the
+            games we love, reconnect with old friends, make new ones, and (of
+            course) eat a whole lot of ice cream.
+          </p>
+          <p>
+            Your energy, passion, and support mean the world to us — Headstomper
+            wouldn&rsquo;t be the same without this incredible community.
+          </p>
+          <p>We can&rsquo;t wait to do it all again. See you in 2026!</p>
+          <p>
+            In the meantime, follow us on{" "}
+            <Link href="https://x.com/headstomper">Twitter</Link> for all the
+            latest updates on Headstomper <b>2026</b>!
           </p>
         </div>
       </Container>
