@@ -34,10 +34,6 @@ const swipePower = (offset, velocity) => {
 };
 
 const Slider = ({ folder = "./", images }) => {
-  if (!images || images.length === 0) {
-    return null;
-  }
-
   const [[page, direction], setPage] = useState([0, 0]);
 
   const imageIndex = wrap(0, images.length, page);
