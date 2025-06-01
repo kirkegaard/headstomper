@@ -40,7 +40,7 @@ const Hero = () => {
           />
           <div className="my-2">
             <h3 className="fw-bold">Thank you all!</h3>
-            <p>See you all next year!</p>
+            <p>See you next year!</p>
             <Button variant="outline" size="large" href="#stats" onClick={goto}>
               See results
             </Button>
