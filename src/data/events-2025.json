@@ -14,7 +14,24 @@
       "desc": "Street Fighter 6 offers a highly evolved combat system with three control types - Classic, Modern and Dynamic - allowing you to quickly play to your skill level",
       "playedOn": "PS5 vers. on PS5",
       "streams": null,
-      "results": null
+      "results": [
+        "1. Silva|DidimoKOF (A.K.I.)",
+        "2. MysticSmash (A.K.I., Kimberly)",
+        "3. Chinooo (Ken, Akuma)",
+        "4. Kwiddo (Blanka)",
+        "5. Smoib (E. Honda, Luke)",
+        "5. KSP|Ixion (Dee Jay)",
+        "7. FROG|Yosh (Akuma)",
+        "7. UFGC|GurkSlukarN (JP)",
+        "9. RST|Launch (Juri)",
+        "9. Zouni (Kimberly)",
+        "9. Rotbah (E. Honda)",
+        "9. FROG|Reiskorn (Kimberly)",
+        "13. Furby (Jamie)",
+        "13. BansheeBomb (Ed)",
+        "13. FrilledShark (Lily)",
+        "13. FROG|MasterMT (Luke)"
+      ]
     },
     {
       "title": "Guilty Gear -Strive-",
@@ -22,7 +39,24 @@
       "desc": "The cutting-edge 2D/3D hybrid graphics pioneered in the Guilty Gear series have been raised to the next level in “GUILTY GEAR -STRIVE-“",
       "playedOn": "PS4 vers. on PS5",
       "streams": null,
-      "results": null
+      "results": [
+        "1. Andross11 (Potemkin)",
+        "2. ONi|TigerPop (Happy Chaos, A.B.A)",
+        "3. Resil (Bedman?, Dizzy)",
+        "4. TSM|Leffen (Happy Chaos)",
+        "5. YK|Shocker (Axl)",
+        "5. Soap Eater (Johnny)",
+        "7. YURI|Strelitzia (Asuka)",
+        "7. Vice|Revill (Sin)",
+        "9. TWS|Alexiad (Ramlethal)",
+        "9. Scarfed (Chipp)",
+        "9. Bitchon Jokas (Slayer)",
+        "9. LS99|Heyheylo (Zato-1, Goldlewis)",
+        "13. Daugion (Baiken)",
+        "13. Icarus (Nagoriyuki)",
+        "13. POOP|Ina (Bridget)",
+        "13. Rygand (May)"
+      ]
     },
     {
       "title": "Granblue Fantasy Versus: Rising",
@@ -30,7 +64,24 @@
       "desc": "Go head-to-head with your favorite Granblue Fantasy characters in this sequel to the fighting game Granblue Fantasy Versus.",
       "playedOn": "PS5 vers. on PS5",
       "streams": null,
-      "results": null
+      "results": [
+        "1. mirri (Eustace)",
+        "2. Oplon|Skyll (Soriz, Beatrix)",
+        "3. Svampen (Zeta, Beatrix)",
+        "4. Arefu (Sandalphon)",
+        "5. Socky (Katalina, Charlotta)",
+        "5. Dudeakoff (Metera, Seox)",
+        "7. Desselie (Metera)",
+        "7. Pixi (Lowain)",
+        "9. WS|MFH (Siegfried)",
+        "9. Yuna (Vira)",
+        "9. Releasebogus (Lowain)",
+        "9. CT11 (Gran)",
+        "13. ReMade (Yuel)",
+        "13. Tuhojuho (Yuel)",
+        "13. BJ|GideonTG (Lowain)",
+        "13. Pyro (Yuel)"
+      ]
     },
     {
       "title": "Fatal Fury: City of the Wolves",
@@ -44,42 +95,6 @@
   "side": [
     {
       "title": "Street Fighter III: 3rd Strike",
-      "url": null
-    },
-    {
-      "title": "Ultra Street Fighter IV",
-      "url": null
-    },
-    {
-      "title": "Sega Rally Championship",
-      "url": null
-    },
-    {
-      "title": "IK+",
-      "url": null
-    },
-    {
-      "title": "ClayFighter",
-      "url": null
-    },
-    {
-      "title": "Waku Waku 7",
-      "url": null
-    },
-    {
-      "title": "Fight Crab",
-      "url": null
-    },
-    {
-      "title": "Footsies",
-      "url": null
-    },
-    {
-      "title": "Primal Rage",
-      "url": null
-    },
-    {
-      "title": "TMNT: Tournament Fighters",
       "url": null
     }
   ]
