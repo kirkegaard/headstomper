@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, useAnimate } from "motion/react";
 import type { Easing } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -20,6 +20,46 @@ function random(arr: string[], exclude?: string): string {
   return pool[Math.floor(Math.random() * pool.length)];
 }
 
+function preload(src: string) {
+  const img = new window.Image();
+  img.src = src;
+}
+
+interface SlideProps {
+  src: string;
+  duration: number;
+  easing: Easing | Easing[];
+  onExited?: () => void;
+}
+
+const Slide = ({ src, duration, easing }: SlideProps) => {
+  const [scope, animate] = useAnimate();
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!loaded) return;
+    animate(scope.current, { opacity: 1 }, { duration, ease: easing });
+  }, [loaded, animate, scope, duration, easing]);
+
+  return (
+    <motion.div
+      ref={scope}
+      className={styles.slide}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0, transition: { duration, ease: easing } }}
+    >
+      <Image
+        src={src}
+        alt=""
+        fill
+        style={{ objectFit: "cover" }}
+        onLoad={() => setLoaded(true)}
+        priority
+      />
+    </motion.div>
+  );
+};
+
 export const Slider = ({
   data,
   basePath,
@@ -35,35 +75,32 @@ export const Slider = ({
     ref.current = initial;
     setCurrent(initial);
 
+    // preload the second image early
+    preload(`${basePath}/${random(data, initial)}`);
+
     const id = setInterval(() => {
       const next = random(data, ref.current ?? undefined);
       ref.current = next;
       setCurrent(next);
+
+      // preload the one after
+      preload(`${basePath}/${random(data, next)}`);
     }, interval);
+
     return () => clearInterval(id);
-  }, [data, interval]);
+  }, [data, interval, basePath]);
 
   if (!current) return <div className={styles.root} />;
 
   return (
     <div className={styles.root}>
       <AnimatePresence>
-        <motion.div
+        <Slide
           key={current}
-          className={styles.slide}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: transition / 1000, ease: easing }}
-        >
-          <Image
-            src={`${basePath}/${current}`}
-            alt=""
-            fill
-            style={{ objectFit: "cover" }}
-            priority
-          />
-        </motion.div>
+          src={`${basePath}/${current}`}
+          duration={transition / 1000}
+          easing={easing}
+        />
       </AnimatePresence>
     </div>
   );
