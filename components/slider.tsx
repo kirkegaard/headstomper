@@ -1,25 +1,18 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
+import type { Easing } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 import styles from "./slider.module.css";
-
-type Easing =
-  | "linear"
-  | "easeIn"
-  | "easeOut"
-  | "easeInOut"
-  | `cubic-bezier(${number}, ${number}, ${number}, ${number})`
-  | [number, number, number, number];
 
 interface SliderProps {
   data: string[];
   basePath: string;
   interval?: number;
   transition?: number;
-  easing?: Easing;
+  easing?: Easing | Easing[];
 }
 
 function random(arr: string[], exclude?: string): string {
