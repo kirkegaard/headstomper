@@ -1,0 +1,95 @@
+.base {
+  display: flex;
+}
+
+/* center horizontally via auto margins */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* fill the viewport */
+.fill {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* maxWidth */
+.maxWidthSm {
+  max-width: 600px;
+}
+.maxWidthMd {
+  max-width: 900px;
+}
+.maxWidthLg {
+  max-width: 1200px;
+}
+.maxWidthXl {
+  max-width: 1536px;
+}
+.maxWidthFull {
+  max-width: 100%;
+}
+
+/* justifyContent */
+.justifyFlexStart {
+  justify-content: flex-start;
+}
+.justifyFlexEnd {
+  justify-content: flex-end;
+}
+.justifyCenter {
+  justify-content: center;
+}
+.justifySpaceBetween {
+  justify-content: space-between;
+}
+.justifySpaceAround {
+  justify-content: space-around;
+}
+.justifySpaceEvenly {
+  justify-content: space-evenly;
+}
+
+/* alignItems */
+.alignFlexStart {
+  align-items: flex-start;
+}
+.alignFlexEnd {
+  align-items: flex-end;
+}
+.alignCenter {
+  align-items: center;
+}
+.alignStretch {
+  align-items: stretch;
+}
+.alignBaseline {
+  align-items: baseline;
+}
+
+/* flexDirection */
+.directionRow {
+  flex-direction: row;
+}
+.directionRowReverse {
+  flex-direction: row-reverse;
+}
+.directionColumn {
+  flex-direction: column;
+}
+.directionColumnReverse {
+  flex-direction: column-reverse;
+}
+
+/* flexWrap */
+.wrapNowrap {
+  flex-wrap: nowrap;
+}
+.wrapWrap {
+  flex-wrap: wrap;
+}
+.wrapWrapReverse {
+  flex-wrap: wrap-reverse;
+}
