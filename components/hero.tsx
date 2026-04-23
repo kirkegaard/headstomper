@@ -30,5 +30,8 @@ export const Hero = () => (
     <motion.p className={styles.date} {...fade(1)}>
       06 - 08 November 2026
     </motion.p>
+    <motion.p className={styles.place} {...fade(1.4)}>
+      Malmö, Sweden
+    </motion.p>
   </div>
 );
