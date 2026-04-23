@@ -1,5 +1,6 @@
 "use client";
 
+import type { Easing } from "motion/react";
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -8,7 +9,7 @@ import styles from "./hero.module.css";
 const fade = (delay: number) => ({
   initial: { opacity: 0 },
   animate: { opacity: 1 },
-  transition: { duration: 2, ease: "easeOut", delay },
+  transition: { duration: 2, ease: "easeOut" as Easing, delay },
 });
 
 export const Hero = () => (
