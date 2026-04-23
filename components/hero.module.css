@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tagline {
+  color: #fff;
+  font-size: 1.25rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: var(--font-geist-sans);
+  margin-bottom: 0rem;
+}
+
+.date {
+  font-size: 1.125rem;
+  margin: 0;
+}

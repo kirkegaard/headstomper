@@ -1,27 +1,27 @@
 {
-  "name": "headstomper",
-  "version": "0.2.0",
+  "name": "headstomper-v2",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "biome check",
+    "lint:fix": "biome check --fix",
+    "format": "biome format --write"
   },
   "dependencies": {
-    "@vercel/analytics": "^2.0.1",
-    "classnames": "^2.5.1",
-    "eslint": "10.0.3",
-    "eslint-config-next": "16.1.7",
-    "framer-motion": "^12.38.0",
-    "next": "16.1.7",
-    "popmotion": "^11.0.5",
-    "prettier": "^3.8.1",
+    "class-variance-authority": "^0.7.1",
+    "motion": "^12.38.0",
+    "next": "16.2.4",
     "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "react-icons": "^5.6.0",
-    "rfs": "^10.0.0",
-    "sass": "^1.98.0",
-    "sharp": "^0.34.5"
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.13",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
   }
 }
