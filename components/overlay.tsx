@@ -33,11 +33,27 @@ interface DotsEffect {
   radius?: number;
 }
 
-type Effect = DotsEffect;
+interface GrayscaleEffect {
+  type: "grayscale";
+  /** 0–1, defaults to 1 (full grayscale) */
+  amount?: number;
+}
+
+interface LevelsEffect {
+  type: "levels";
+  /** 0–1, darkens overall brightness, defaults to 1 */
+  brightness?: number;
+  /** 0–1, reduces contrast, defaults to 1 */
+  contrast?: number;
+  /** 0–1, reduces saturation, defaults to 1 */
+  saturate?: number;
+}
+
+type Effect = DotsEffect | GrayscaleEffect | LevelsEffect;
 
 interface OverlayProps {
   layers?: Layer | Layer[];
-  effect?: Effect;
+  effect?: Effect | Effect[];
   children?: React.ReactNode;
 }
 
@@ -55,21 +71,42 @@ function dotsSVG(color: string, size: number, radius: number): string {
 
 export const Overlay = ({ layers, effect, children }: OverlayProps) => {
   const arr = layers ? (Array.isArray(layers) ? layers : [layers]) : [];
+  const effects = effect ? (Array.isArray(effect) ? effect : [effect]) : [];
   const bg = arr.map(toCSS).join(", ") || undefined;
 
-  const effectStyle: React.CSSProperties = {};
-  if (effect?.type === "dots") {
-    const { color = "rgba(0,0,0,0.8)", size = 4, radius = 0.35 } = effect;
-    effectStyle.backgroundImage = dotsSVG(color, size, radius);
-    effectStyle.backgroundRepeat = "repeat";
-    effectStyle.backgroundSize = `${size}px ${size}px`;
+  const dots = effects.filter((e): e is DotsEffect => e.type === "dots");
+  const grayscale = effects.find((e): e is GrayscaleEffect => e.type === "grayscale");
+  const levels = effects.find((e): e is LevelsEffect => e.type === "levels");
+
+  const filters: string[] = [];
+  if (grayscale) filters.push(`grayscale(${grayscale.amount ?? 1})`);
+  if (levels) {
+    if (levels.brightness !== undefined) filters.push(`brightness(${levels.brightness})`);
+    if (levels.contrast !== undefined) filters.push(`contrast(${levels.contrast})`);
+    if (levels.saturate !== undefined) filters.push(`saturate(${levels.saturate})`);
   }
 
+  const rootStyle: React.CSSProperties = {};
+  if (filters.length) rootStyle.filter = filters.join(" ");
+
   return (
-    <div className={styles.root}>
+    <div className={styles.root} style={rootStyle}>
       {children}
       {bg && <div className={styles.overlay} style={{ background: bg }} />}
-      {effect && <div className={styles.overlay} style={effectStyle} />}
+      {dots.map((d, i) => {
+        const { color = "rgba(0,0,0,0.8)", size = 4, radius = 0.35 } = d;
+        return (
+          <div
+            key={i}
+            className={styles.overlay}
+            style={{
+              backgroundImage: dotsSVG(color, size, radius),
+              backgroundRepeat: "repeat",
+              backgroundSize: `${size}px ${size}px`,
+            }}
+          />
+        );
+      })}
     </div>
   );
 };
