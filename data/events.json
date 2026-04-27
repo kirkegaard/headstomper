@@ -1,4 +1,261 @@
 {
+  "2015": {
+    "main": [
+      {
+        "title": "Ultra Street Fighter IV",
+        "url": null,
+        "desc": "Ultra Street Fighter IV is a fighting game developed and published by Capcom.",
+        "playedOn": null,
+        "streams": null,
+        "results": [
+          "1. Yagami",
+          "2. Chinooo",
+          "3. IND | SaltyKid",
+          "4. BrainSplitter",
+          "5. Knix",
+          "5. Warbio",
+          "7. TSM | Leffen",
+          "7. IND | King Funk"
+        ]
+      },
+      {
+        "title": "Super Smash Bros. Melee",
+        "url": null,
+        "desc": "Super Smash Bros. Melee is a fighting game developed by HAL Laboratory.",
+        "playedOn": null,
+        "streams": null,
+        "results": [
+          "1. TSM | Leffen",
+          "2. VJ",
+          "3. Yuna",
+          "4. Flodens Mun",
+          "5. IND | King Funk",
+          "5. FA0",
+          "7. RPG",
+          "7. K1kk0man"
+        ]
+      },
+      {
+        "title": "Guilty Gear Xrd -SIGN-",
+        "url": null,
+        "desc": "Guilty Gear Xrd -SIGN- is a fighting game developed and published by Arc System Works.",
+        "playedOn": null,
+        "streams": null,
+        "results": [
+          "1. PotMonsterX",
+          "2. ShootingROCCAT",
+          "3. Apos",
+          "4. GlennarN",
+          "5. Shinjin",
+          "5. Yonasu",
+          "7. GTO",
+          "7. ON | PedramAB7"
+        ]
+      }
+    ],
+    "side": [
+      {
+        "title": "Tekken Tag Tournament 2",
+        "url": null,
+        "results": [
+          "1. Jelo",
+          "2. Whereiswogus?",
+          "3. Cyrox",
+          "4. CKT | Adam-0",
+          "5. CKT | Adnanish",
+          "5. Bopper",
+          "7. ATOWN4LIFESON",
+          "7. Mar"
+        ]
+      },
+      {
+        "title": "Super Smash Bros. Melee (Teams)",
+        "url": null,
+        "results": [
+          "1. Ringside",
+          "2. Emotjejen på ICA",
+          "3. Rinnande glasögon",
+          "4. Team Bitches",
+          "5. Blaze/Off",
+          "5. S.W.A.G",
+          "7. Grannmaskiner",
+          "7. Dryaderna"
+        ]
+      }
+    ]
+  },
+  "2016": {
+    "main": [
+      {
+        "title": "Tekken 7",
+        "url": null,
+        "desc": "Tekken 7 is a fighting game developed and published by Bandai Namco Entertainment.",
+        "playedOn": null,
+        "streams": null,
+        "results": [
+          "1. Caiper",
+          "2. JDCR",
+          "3. CKT|Adam-0",
+          "4. CKT|Jackpotdante",
+          "5. CKT|Fergus",
+          "5. guice",
+          "7. TheMainManSWE",
+          "7. CKT|WilvanBil"
+        ]
+      },
+      {
+        "title": "Street Fighter V",
+        "url": null,
+        "desc": "Street Fighter V is a fighting game developed and published by Capcom.",
+        "playedOn": null,
+        "streams": null,
+        "results": [
+          "1. F2K|Popi",
+          "2. YagaMan",
+          "3. SaltyKid",
+          "4. Brick",
+          "5. Chinooo",
+          "5. z3poxx",
+          "7. summerboy52",
+          "7. CKT|Fergus"
+        ]
+      },
+      {
+        "title": "Guilty Gear Xrd Revelator",
+        "url": null,
+        "desc": "Guilty Gear Xrd Revelator is a fighting game developed and published by Arc System Works.",
+        "playedOn": null,
+        "streams": null,
+        "results": [
+          "1. Baszoo",
+          "2. Martin",
+          "3. Goy",
+          "4. Shinjin",
+          "5. Monkeys",
+          "5. Saikyun",
+          "7. P_C",
+          "7. Koas"
+        ]
+      },
+      {
+        "title": "Super Smash Bros. for Wii U",
+        "url": null,
+        "desc": "Super Smash Bros. for Wii U is a fighting game developed by Sora Ltd. and Bandai Namco Studios.",
+        "playedOn": null,
+        "streams": null,
+        "results": [
+          "1. Gloodey",
+          "2. NWDM|Shadowclaw",
+          "3. cross~up",
+          "4. MMES|AwesomeBee",
+          "5. BML Poopmaister6000",
+          "5. NWDM|DuffCity",
+          "7. Calmaty",
+          "7. Y.E.S."
+        ]
+      }
+    ],
+    "side": [
+      {
+        "title": "Tekken Tag Tournament 2",
+        "url": null,
+        "results": [
+          "1. JDCR",
+          "2. CKT|Fergus",
+          "3. Caiper",
+          "4. Cyrox",
+          "5. JeloSWE",
+          "5. FS|SpaghettiRip",
+          "7. Kneeninho",
+          "7. CKT|WilvanBil"
+        ]
+      },
+      {
+        "title": "Ultra Street Fighter IV",
+        "url": null,
+        "results": [
+          "1. P_C",
+          "2. Rotbah",
+          "3. Ixion I",
+          "4. Moe",
+          "5. YagaMan",
+          "5. TM|Robofobe",
+          "7. SaltyKid",
+          "7. Crosshatched"
+        ]
+      },
+      {
+        "title": "Under Night In-Birth Exe:Late",
+        "url": null,
+        "results": [
+          "1. Caruzon",
+          "2. Apos",
+          "3. Martin",
+          "3. VerdantGeo",
+          "5. Goofy",
+          "5. HD|HachimitsuBoy",
+          "5. CKT|Unifox",
+          "5. KajzerJack"
+        ]
+      },
+      {
+        "title": "Ultimate Marvel vs. Capcom 3",
+        "url": null,
+        "results": [
+          "1. Yagaman",
+          "2. Cyrox",
+          "3. OldAndBusted",
+          "4. P_C",
+          "5. Scrubmeister",
+          "5. Jet",
+          "7. MajinHeadstomp",
+          "7. Yomimono"
+        ]
+      },
+      {
+        "title": "Super Smash Bros. Melee",
+        "url": null,
+        "results": [
+          "1. TSM|Leffen",
+          "2. BML Poopmaister6000",
+          "3. Flodens Mun",
+          "4. Stax$",
+          "5. Widde",
+          "5. Kim",
+          "7. VJ",
+          "7. Kuja"
+        ]
+      },
+      {
+        "title": "Super Smash Bros. Melee (Doubles)",
+        "url": null,
+        "results": [
+          "1. Baloo & Bagheera",
+          "2. Ed Wood",
+          "3. newschoolboys",
+          "4. Bastion In His F***ing Turret Form",
+          "5. The Sleeping Crew",
+          "5. VN",
+          "7. Too Confusing Team Name",
+          "7. CazNess"
+        ]
+      },
+      {
+        "title": "Under Night In-Birth / BlazBlue",
+        "url": null,
+        "results": [
+          "1. ShootingROCCAT",
+          "2. Lillefyr",
+          "3. Zeroshift",
+          "3. Blaval",
+          "5. BMonkey",
+          "5. Rotbah",
+          "5. Apos",
+          "5. TheSwedeHeart"
+        ]
+      }
+    ]
+  },
   "2017": {
     "main": [
       {
