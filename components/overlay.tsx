@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "motion/react";
 import styles from "./overlay.module.css";
 
 type Stop = string;
@@ -75,29 +76,40 @@ export const Overlay = ({ layers, effect, children }: OverlayProps) => {
   const bg = arr.map(toCSS).join(", ") || undefined;
 
   const dots = effects.filter((e): e is DotsEffect => e.type === "dots");
-  const grayscale = effects.find((e): e is GrayscaleEffect => e.type === "grayscale");
+  const grayscale = effects.find(
+    (e): e is GrayscaleEffect => e.type === "grayscale",
+  );
   const levels = effects.find((e): e is LevelsEffect => e.type === "levels");
 
   const filters: string[] = [];
   if (grayscale) filters.push(`grayscale(${grayscale.amount ?? 1})`);
   if (levels) {
-    if (levels.brightness !== undefined) filters.push(`brightness(${levels.brightness})`);
-    if (levels.contrast !== undefined) filters.push(`contrast(${levels.contrast})`);
-    if (levels.saturate !== undefined) filters.push(`saturate(${levels.saturate})`);
+    if (levels.brightness !== undefined)
+      filters.push(`brightness(${levels.brightness})`);
+    if (levels.contrast !== undefined)
+      filters.push(`contrast(${levels.contrast})`);
+    if (levels.saturate !== undefined)
+      filters.push(`saturate(${levels.saturate})`);
   }
 
   const rootStyle: React.CSSProperties = {};
   if (filters.length) rootStyle.filter = filters.join(" ");
 
   return (
-    <div className={styles.root} style={rootStyle}>
+    <motion.div
+      className={styles.root}
+      style={rootStyle}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.2, ease: "easeInOut" }}
+    >
       {children}
       {bg && <div className={styles.overlay} style={{ background: bg }} />}
-      {dots.map((d, i) => {
+      {dots.map((d) => {
         const { color = "rgba(0,0,0,0.8)", size = 4, radius = 0.35 } = d;
         return (
           <div
-            key={i}
+            key={`${color}-${size}-${radius}`}
             className={styles.overlay}
             style={{
               backgroundImage: dotsSVG(color, size, radius),
@@ -107,6 +119,6 @@ export const Overlay = ({ layers, effect, children }: OverlayProps) => {
           />
         );
       })}
-    </div>
+    </motion.div>
   );
 };

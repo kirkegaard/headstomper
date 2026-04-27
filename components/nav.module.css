@@ -1,0 +1,29 @@
+.nav {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link,
+.active {
+  font-family: var(--font-geist-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.link:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.active {
+  color: #fff;
+}
