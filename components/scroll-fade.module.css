@@ -25,8 +25,12 @@
   background: linear-gradient(to left, var(--background), transparent);
 }
 
-.wrap[data-fade-left="true"]::before { opacity: 1; }
-.wrap[data-fade-right="true"]::after { opacity: 1; }
+.wrap[data-fade-left="true"]::before {
+  opacity: 1;
+}
+.wrap[data-fade-right="true"]::after {
+  opacity: 1;
+}
 
 .inner {
   overflow-x: auto;

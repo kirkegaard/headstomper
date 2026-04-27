@@ -15,8 +15,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Headstomper",
+  metadataBase: new URL("https://headstomper.com"),
+  title: {
+    default: "Headstomper",
+    template: "%s – Headstomper",
+  },
   description: "Save the date! See you 06-08th November 2026 in Malmö, Sweden.",
+  openGraph: {
+    siteName: "Headstomper",
+    title: "Headstomper",
+    description:
+      "Save the date! See you 06-08th November 2026 in Malmö, Sweden.",
+    url: "https://headstomper.com",
+    type: "website",
+    images: [
+      {
+        url: "/assets/images/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Headstomper",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Headstomper",
+    title: "Headstomper",
+    description:
+      "Save the date! See you 06-08th November 2026 in Malmö, Sweden.",
+    images: ["/assets/images/og.jpg"],
+  },
 };
 
 export default function RootLayout({

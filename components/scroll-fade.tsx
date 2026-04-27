@@ -30,12 +30,23 @@ export function ScrollFade({
     el.addEventListener("scroll", update, { passive: true });
     const ro = new ResizeObserver(update);
     ro.observe(el);
-    return () => { el.removeEventListener("scroll", update); ro.disconnect(); };
+    return () => {
+      el.removeEventListener("scroll", update);
+      ro.disconnect();
+    };
   }, [update]);
 
   return (
-    <div className={styles.wrap} style={style} data-fade-left={fadeLeft} data-fade-right={fadeRight}>
-      <div ref={ref} className={`${styles.inner}${className ? ` ${className}` : ""}`}>
+    <div
+      className={styles.wrap}
+      style={style}
+      data-fade-left={fadeLeft}
+      data-fade-right={fadeRight}
+    >
+      <div
+        ref={ref}
+        className={`${styles.inner}${className ? ` ${className}` : ""}`}
+      >
         {children}
       </div>
     </div>

@@ -1,7 +1,4 @@
-"use client";
-
-import { useCallback, useState, useEffect, use } from "react";
-import { useRouter } from "next/navigation";
+import type { Metadata } from "next";
 import { Container } from "@/components/container";
 import { ScrollFade } from "@/components/scroll-fade";
 import events from "@/data/events.json";
@@ -9,52 +6,67 @@ import styles from "../page.module.css";
 
 const years = Object.keys(events).sort((a, b) => Number(b) - Number(a));
 
+export function generateStaticParams() {
+  return years.map((year) => ({ year }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ year: string }>;
+}): Promise<Metadata> {
+  const { year: param } = await params;
+  const year = years.includes(param) ? param : years[0];
+  return {
+    title: `${year} Results – Headstomper Legacy`,
+    description: `Tournament results from Headstomper ${year} — Scandinavia's biggest fighting game event.`,
+    openGraph: {
+      title: `${year} Results – Headstomper Legacy`,
+      description: `Tournament results from Headstomper ${year} — Scandinavia's biggest fighting game event.`,
+    },
+  };
+}
+
 function place(result: string) {
   const match = result.match(/^(\d+)\.\s/);
   return match ? match[1] : null;
 }
 
-function name(result: string) {
+function playerName(result: string) {
   return result.replace(/^\d+\.\s/, "");
 }
 
-export default function LegacyYear({ params }: { params: Promise<{ year: string }> }) {
-  const router = useRouter();
-  const { year: param } = use(params);
+export default async function LegacyYear({
+  params,
+}: {
+  params: Promise<{ year: string }>;
+}) {
+  const { year: param } = await params;
   const year = years.includes(param) ? param : years[0];
   const data = events[year as keyof typeof events];
-  const [visible, setVisible] = useState(true);
-
-  useEffect(() => {
-    setVisible(false);
-    const t = setTimeout(() => setVisible(true), 20);
-    return () => clearTimeout(t);
-  }, [year]);
-
-  const switchYear = useCallback((y: string) => {
-    if (y === year) return;
-    setVisible(false);
-    setTimeout(() => router.push(`/legacy/${y}`), 150);
-  }, [year, router]);
 
   return (
     <Container fill flexDirection="column" alignItems="flexStart">
+      <div className={styles.header}>
+        <div className={styles.headerInner}>
+          <h1 className={styles.title}>Legacy</h1>
+
+          <ScrollFade className={styles.years}>
+            {years.map((y) => (
+              <a
+                key={y}
+                href={`/legacy/${y}`}
+                className={y === year ? styles.yearActive : styles.year}
+              >
+                {y}
+              </a>
+            ))}
+          </ScrollFade>
+        </div>
+      </div>
+
       <div className={styles.page}>
-        <h1 className={styles.title}>Legacy</h1>
-
-        <ScrollFade className={styles.years} style={{ marginBottom: "3rem" }}>
-          {years.map((y) => (
-            <button
-              key={y}
-              className={y === year ? styles.yearActive : styles.year}
-              onClick={() => switchYear(y)}
-            >
-              {y}
-            </button>
-          ))}
-        </ScrollFade>
-
-        <div className={styles.content} style={{ opacity: visible ? 1 : 0 }}>
+        <div className={styles.content}>
           <div className={styles.events}>
             {data.main.map((event) => (
               <div key={event.title} className={styles.event}>
@@ -72,12 +84,11 @@ export default function LegacyYear({ params }: { params: Promise<{ year: string 
                     <span className={styles.eventTitle}>{event.title}</span>
                   )}
                 </div>
-
                 <ol className={styles.results}>
                   {event.results.map((r) => (
                     <li key={r} className={styles.result} data-place={place(r)}>
                       <span className={styles.pos}>{place(r)}</span>
-                      <span className={styles.player}>{name(r)}</span>
+                      <span className={styles.player}>{playerName(r)}</span>
                     </li>
                   ))}
                 </ol>
@@ -112,7 +123,9 @@ export default function LegacyYear({ params }: { params: Promise<{ year: string 
                             data-place={place(r)}
                           >
                             <span className={styles.pos}>{place(r)}</span>
-                            <span className={styles.player}>{name(r)}</span>
+                            <span className={styles.player}>
+                              {playerName(r)}
+                            </span>
                           </li>
                         ))}
                       </ol>

@@ -1,6 +1,7 @@
 .base {
   display: flex;
   overflow-y: auto;
+  position: relative;
 }
 
 /* center horizontally via auto margins */

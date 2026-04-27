@@ -5,9 +5,38 @@ import { Slider } from "@/components/slider";
 import data from "@/data/gallery-2025.json";
 import styles from "./page.module.css";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  name: "Headstomper 2026",
+  description: "Scandinavia's biggest fighting game tournament.",
+  startDate: "2026-11-06",
+  endDate: "2026-11-08",
+  eventStatus: "https://schema.org/EventScheduled",
+  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+  location: {
+    "@type": "Place",
+    name: "Malmö, Sweden",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Malmö",
+      addressCountry: "SE",
+    },
+  },
+  organizer: {
+    "@type": "Organization",
+    name: "Headstomper",
+    url: "https://headstomper.com",
+  },
+};
+
 export default function Home() {
   return (
     <Container fill="fixed">
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      <h1 className={styles.sr}>
+        Headstomper — 06-08 November 2026, Malmö, Sweden
+      </h1>
       <Overlay
         layers={[
           {

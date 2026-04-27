@@ -1,6 +1,18 @@
-import { FaDiscord, FaTwitch, FaYoutube, FaXTwitter } from "react-icons/fa6";
+import type { Metadata } from "next";
+import { FaDiscord, FaTwitch, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { Container } from "@/components/container";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Headstomper is Scandinavia's biggest fighting game event — born from a love of competition and community in Copenhagen and Malmö.",
+  openGraph: {
+    title: "About – Headstomper",
+    description:
+      "Headstomper is Scandinavia's biggest fighting game event — born from a love of competition and community in Copenhagen and Malmö.",
+  },
+};
 
 const social = [
   { href: "https://x.com/Headstomper/", icon: FaXTwitter, label: "X" },
