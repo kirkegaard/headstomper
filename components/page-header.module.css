@@ -1,0 +1,52 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  backdrop-filter: blur(2px);
+
+  --scroll: 0;
+
+  --pt-start: 6rem;
+  --pt-end: 6rem;
+  --pb-start: 1rem;
+  --pb-end: 0.5rem;
+}
+
+.inner {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  padding-top: calc(
+    var(--pt-start) + (var(--pt-end) - var(--pt-start)) * var(--scroll)
+  );
+  padding-bottom: calc(
+    var(--pb-start) + (var(--pb-end) - var(--pb-start)) * var(--scroll)
+  );
+
+  transition: padding 120ms linear;
+}
+
+.title {
+  color: #fff;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+
+  --fs-start: 3rem;
+  --fs-end: 1.25rem;
+
+  font-size: calc(
+    var(--fs-start) + (var(--fs-end) - var(--fs-start)) * var(--scroll)
+  );
+
+  transition: font-size 120ms linear;
+}
+
+.sub {
+  margin-top: calc(1.5rem - 0.75rem * var(--scroll));
+  transition: margin-top 120ms linear;
+}

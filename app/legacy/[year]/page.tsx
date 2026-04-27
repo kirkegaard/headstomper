@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/container";
+import { PageHeader } from "@/components/page-header";
 import { ScrollFade } from "@/components/scroll-fade";
 import events from "@/data/events.json";
 import styles from "../page.module.css";
@@ -47,23 +48,19 @@ export default async function LegacyYear({
 
   return (
     <Container fill flexDirection="column" alignItems="flexStart">
-      <div className={styles.header}>
-        <div className={styles.headerInner}>
-          <h1 className={styles.title}>Legacy</h1>
-
-          <ScrollFade className={styles.years}>
-            {years.map((y) => (
-              <a
-                key={y}
-                href={`/legacy/${y}`}
-                className={y === year ? styles.yearActive : styles.year}
-              >
-                {y}
-              </a>
-            ))}
-          </ScrollFade>
-        </div>
-      </div>
+      <PageHeader title="Legacy">
+        <ScrollFade className={styles.years}>
+          {years.map((y) => (
+            <a
+              key={y}
+              href={`/legacy/${y}`}
+              className={y === year ? styles.yearActive : styles.year}
+            >
+              {y}
+            </a>
+          ))}
+        </ScrollFade>
+      </PageHeader>
 
       <div className={styles.page}>
         <div className={styles.content}>
