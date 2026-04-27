@@ -6,7 +6,7 @@
 html {
   height: 100%;
   scrollbar-gutter: stable;
-  scrollbar-width:;
+  scrollbar-width: thin;
   scrollbar-color: gray transparent;
 }
 
@@ -36,30 +36,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-::view-transition-old(root) {
-  animation: 300ms ease-in-out both fade reverse;
-}
-::view-transition-new(root) {
-  animation: 300ms ease-in-out both fade;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  ::view-transition-old(*),
-  ::view-transition-new(*),
-  ::view-transition-group(*) {
-    animation-duration: 0s;
-    animation-delay: 0s;
-  }
 }
