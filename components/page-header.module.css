@@ -21,10 +21,14 @@
   padding-right: 2rem;
 
   padding-top: calc(
-    var(--pt-start) + (var(--pt-end) - var(--pt-start)) * var(--scroll)
+    var(--pt-start) +
+    (var(--pt-end) - var(--pt-start)) *
+    var(--scroll)
   );
   padding-bottom: calc(
-    var(--pb-start) + (var(--pb-end) - var(--pb-start)) * var(--scroll)
+    var(--pb-start) +
+    (var(--pb-end) - var(--pb-start)) *
+    var(--scroll)
   );
 
   transition: padding 120ms linear;
@@ -40,7 +44,9 @@
   --fs-end: 1.25rem;
 
   font-size: calc(
-    var(--fs-start) + (var(--fs-end) - var(--fs-start)) * var(--scroll)
+    var(--fs-start) +
+    (var(--fs-end) - var(--fs-start)) *
+    var(--scroll)
   );
 
   transition: font-size 120ms linear;
