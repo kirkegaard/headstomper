@@ -1,10 +1,15 @@
-import { FaDiscord, FaTwitch, FaXTwitter } from "react-icons/fa6";
+import { FaDiscord, FaTwitch, FaYoutube, FaXTwitter } from "react-icons/fa6";
 import { Container } from "@/components/container";
 import styles from "./page.module.css";
 
 const social = [
   { href: "https://x.com/Headstomper/", icon: FaXTwitter, label: "X" },
-  { href: "https://twitch.tv/headstomper", icon: FaTwitch, label: "Twitch" },
+  { href: "https://twitch.tv/headstomperTV", icon: FaTwitch, label: "Twitch" },
+  {
+    href: "https://www.youtube.com/@headstompertv",
+    icon: FaYoutube,
+    label: "YouTube",
+  },
   {
     href: "https://discord.gg/MJzU8Gn6gt",
     icon: FaDiscord,
@@ -23,7 +28,17 @@ export default function About() {
     >
       <div className={styles.content}>
         <h1 className={styles.title}>About</h1>
-        <p>Scandinavia’s Greatest Fighting Game Tournament.</p>
+        <p>
+          Headstomper is Scandinavia&apos;s biggest fighting game event - born
+          from a love of competition and community.
+        </p>
+        <p>
+          We are two FGC groups from Copenhagen and Malmö who came together to
+          build something bigger than either of us could alone. What started in
+          humble living rooms with CRT TVs, Super Nintendo, and Dreamcast has
+          grown into the region&apos;s premier fighting game tournament.
+        </p>
+        <p>Same passion. Bigger stage.</p>
 
         <footer className={styles.footer}>
           {social.map(({ href, icon: Icon, label }) => (
