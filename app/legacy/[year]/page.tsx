@@ -3,6 +3,7 @@
 import { useCallback, useState, useEffect, use } from "react";
 import { useRouter } from "next/navigation";
 import { Container } from "@/components/container";
+import { ScrollFade } from "@/components/scroll-fade";
 import events from "@/data/events.json";
 import styles from "../page.module.css";
 
@@ -41,7 +42,7 @@ export default function LegacyYear({ params }: { params: Promise<{ year: string 
       <div className={styles.page}>
         <h1 className={styles.title}>Legacy</h1>
 
-        <nav className={styles.years}>
+        <ScrollFade className={styles.years} style={{ marginBottom: "3rem" }}>
           {years.map((y) => (
             <button
               key={y}
@@ -51,21 +52,25 @@ export default function LegacyYear({ params }: { params: Promise<{ year: string 
               {y}
             </button>
           ))}
-        </nav>
+        </ScrollFade>
 
         <div className={styles.content} style={{ opacity: visible ? 1 : 0 }}>
           <div className={styles.events}>
             {data.main.map((event) => (
               <div key={event.title} className={styles.event}>
                 <div className={styles.eventHeader}>
-                  <a
-                    href={event.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.eventTitle}
-                  >
-                    {event.title}
-                  </a>
+                  {event.url ? (
+                    <a
+                      href={event.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.eventTitle}
+                    >
+                      {event.title}
+                    </a>
+                  ) : (
+                    <span className={styles.eventTitle}>{event.title}</span>
+                  )}
                 </div>
 
                 <ol className={styles.results}>

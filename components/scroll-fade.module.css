@@ -1,0 +1,38 @@
+.wrap {
+  position: relative;
+}
+
+.wrap::before,
+.wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3rem;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.wrap::before {
+  left: 0;
+  background: linear-gradient(to right, var(--background), transparent);
+}
+
+.wrap::after {
+  right: 0;
+  background: linear-gradient(to left, var(--background), transparent);
+}
+
+.wrap[data-fade-left="true"]::before { opacity: 1; }
+.wrap[data-fade-right="true"]::after { opacity: 1; }
+
+.inner {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.inner::-webkit-scrollbar {
+  display: none;
+}
