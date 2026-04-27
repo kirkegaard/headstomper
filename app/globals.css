@@ -6,6 +6,8 @@
 html {
   height: 100%;
   scrollbar-gutter: stable;
+  scrollbar-width:;
+  scrollbar-color: gray transparent;
 }
 
 html,
@@ -35,8 +37,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-/* ── View Transitions ──────────────────────────────────────── */
 
 ::view-transition-old(root) {
   animation: 300ms ease-in-out both fade reverse;

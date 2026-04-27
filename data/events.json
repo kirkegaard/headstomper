@@ -1,4 +1,60 @@
 {
+  "2017": {
+    "main": [
+      {
+        "title": "Tekken 7",
+        "url": "https://liquipedia.net/fighters/Headstomper/2017/T7",
+        "desc": "Tekken 7 is a fighting game developed and published by Bandai Namco Entertainment.",
+        "playedOn": null,
+        "streams": null,
+        "results": [
+          "1. Fergus",
+          "2. Bob",
+          "3. Adam-0",
+          "4. kneeninho",
+          "5. kaiser",
+          "5. JeloSWE",
+          "7. Cyrox",
+          "7. JohnnyB"
+        ]
+      },
+      {
+        "title": "Street Fighter V",
+        "url": "https://liquipedia.net/fighters/Headstomper/2017/SFV",
+        "desc": "Street Fighter V is a fighting game developed and published by Capcom.",
+        "playedOn": null,
+        "streams": null,
+        "results": [
+          "1. SaltyKid",
+          "2. Rotbah",
+          "3. Vaalix",
+          "4. DrGulag",
+          "5. Finkku",
+          "5. Ixion",
+          "7. Jojo",
+          "7. z3poxx"
+        ]
+      },
+      {
+        "title": "Guilty Gear Xrd REV2",
+        "url": "https://liquipedia.net/fighters/Headstomper/2017/GGXrdR2",
+        "desc": "Guilty Gear Xrd REV2 is a fighting game developed and published by Arc System Works.",
+        "playedOn": null,
+        "streams": null,
+        "results": [
+          "1. Svampen",
+          "2. Zake",
+          "3. KenDeep",
+          "4. Gerran",
+          "5. ZoKHiZ",
+          "5. PsychedelicPet",
+          "7. SmashSK",
+          "7. Goy"
+        ]
+      }
+    ],
+    "side": []
+  },
   "2018": {
     "main": [
       {
