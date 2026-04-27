@@ -43,6 +43,7 @@ const container = cva(styles.base, {
     },
     fill: {
       true: styles.fill,
+      fixed: styles.fillFixed,
     },
   },
   defaultVariants: {

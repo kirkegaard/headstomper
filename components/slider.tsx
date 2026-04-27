@@ -1,7 +1,7 @@
 "use client";
 
-import { AnimatePresence, motion, useAnimate } from "motion/react";
 import type { Easing } from "motion/react";
+import { AnimatePresence, motion, useAnimate } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
