@@ -13,26 +13,26 @@
 /* fill the viewport, grows with content */
 .fill {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 100dvh;
 
-  @supports (min-height: 100dvh) {
-    .fill {
-      min-height: 100dvh;
-    }
-  }
+  /* @supports (min-height: 100dvh) { */
+  /*   .fill { */
+  /*     min-height: 100dvh; */
+  /*   } */
+  /* } */
 }
 
 /* fill the viewport, fixed — clips overflow */
 .fillFixed {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
 
-  @supports (height: 100dvh) {
-    .fillFixed {
-      height: 100dvh;
-    }
-  }
+  /* @supports (height: 100dvh) { */
+  /*   .fillFixed { */
+  /*     height: 100dvh; */
+  /*   } */
+  /* } */
 }
 
 /* maxWidth */
