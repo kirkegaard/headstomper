@@ -3,6 +3,7 @@ import {
   HiOutlineMapPin,
   HiOutlinePhone,
 } from "react-icons/hi2";
+import { Button } from "./button";
 import { Section } from "./section";
 import styles from "./info.module.css";
 
@@ -67,6 +68,53 @@ export function Info() {
             Take the train from Malm&ouml; towards Copenhagen. Get off at Hyllie
             station. However Copenhagen is much closer!
           </p>
+        </div>
+        <div>
+          <h3 className={styles.subtitle}>Pricing</h3>
+          <ul className={styles.prices}>
+            <li className={styles.price}>
+              <span className={styles.label}>
+                <s className={styles.sold}>Super Early Bird</s>
+                <span className={styles.note}>Sold out</span>
+              </span>
+              <span className={styles.amount}>50 &euro;</span>
+            </li>
+            <li className={styles.price}>
+              <span className={styles.label}>
+                Early Bird
+                <span className={styles.note}>Ends 18 June</span>
+              </span>
+              <span className={styles.amount}>55 &euro;</span>
+            </li>
+            <li className={styles.price}>
+              <span className={styles.label}>
+                Regular Pass
+                <span className={styles.note}>Ends 30 September</span>
+              </span>
+              <span className={styles.amount}>65 &euro;</span>
+            </li>
+            <li className={styles.price}>
+              <span className={styles.label}>
+                Late Pass
+                <span className={styles.note}>Ends 31 October</span>
+              </span>
+              <span className={styles.amount}>75 &euro;</span>
+            </li>
+            <li className={styles.price}>
+              <span className={styles.label}>
+                Tournament Entry
+                <span className={styles.note}>Per main game</span>
+              </span>
+              <span className={styles.amount}>10 &euro;</span>
+            </li>
+          </ul>
+          <Button
+            href="https://start.gg/Headstomper"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Register now
+          </Button>
         </div>
       </div>
     </Section>

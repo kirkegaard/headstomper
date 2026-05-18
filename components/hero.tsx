@@ -42,6 +42,7 @@ export const Hero = () => (
       >
         Register now
       </Button>
+      <p className={styles.deadline}>Registration closes 31 October 2026, 23:59 CEST</p>
     </motion.div>
   </div>
 );
