@@ -1,0 +1,16 @@
+.root {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 100;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.text {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+}

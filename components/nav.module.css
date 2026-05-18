@@ -3,6 +3,63 @@
   top: 1.5rem;
   right: 1.5rem;
   z-index: 100;
+}
+
+.toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 101;
+}
+
+.burger,
+.x {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  position: relative;
+  transition: background 0.2s ease;
+}
+
+.burger::before,
+.burger::after,
+.x::before,
+.x::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.burger::before {
+  top: -6px;
+}
+
+.burger::after {
+  top: 6px;
+}
+
+.x {
+  background: transparent;
+}
+
+.x::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.x::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.menu {
   display: flex;
   gap: 1.5rem;
 }
@@ -25,4 +82,34 @@
 
 .active {
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+    position: relative;
+  }
+
+  .menu {
+    position: fixed;
+    inset: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 0.95);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .menu.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu .link,
+  .menu .active {
+    font-size: 1rem;
+  }
 }
