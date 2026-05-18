@@ -69,6 +69,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  line-height: 1;
   transition: color 0.2s ease;
 }
 

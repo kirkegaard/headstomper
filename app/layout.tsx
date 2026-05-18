@@ -18,15 +18,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://headstomper.com"),
   title: {
-    default: "Headstomper 2026",
+    default: "Headstomper 2026 — Scandinavia's Biggest Fighting Game Tournament",
     template: "%s – Headstomper",
   },
-  description: "Save the date! See you 06-08th November 2026 in Malmö, Sweden.",
+  description:
+    "Registrations are open! Scandinavia's biggest fighting game tournament returns 06-08 November 2026 in Malmö, Sweden. Featuring Guilty Gear: Strive, Tekken 8, Granblue Fantasy Versus: Rising, Street Fighter 6 and more.",
   openGraph: {
     siteName: "Headstomper",
-    title: "Headstomper",
+    title: "Headstomper 2026 — Scandinavia's Biggest Fighting Game Tournament",
     description:
-      "Save the date! See you 06-08th November 2026 in Malmö, Sweden.",
+      "Registrations are open! Scandinavia's biggest fighting game tournament returns 06-08 November 2026 in Malmö, Sweden. Featuring Guilty Gear: Strive, Tekken 8, Granblue Fantasy Versus: Rising, Street Fighter 6 and more.",
     url: "https://headstomper.com",
     type: "website",
     images: [
@@ -34,16 +35,16 @@ export const metadata: Metadata = {
         url: "/assets/images/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Headstomper",
+        alt: "Headstomper 2026",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@Headstomper",
-    title: "Headstomper",
+    title: "Headstomper 2026 — Scandinavia's Biggest Fighting Game Tournament",
     description:
-      "Save the date! See you 06-08th November 2026 in Malmö, Sweden.",
+      "Registrations are open! Scandinavia's biggest fighting game tournament returns 06-08 November 2026 in Malmö, Sweden. Featuring Guilty Gear: Strive, Tekken 8, Granblue Fantasy Versus: Rising, Street Fighter 6 and more.",
     images: ["/assets/images/og.jpg"],
   },
 };
