@@ -3,6 +3,7 @@ import {
   HiOutlineMapPin,
   HiOutlinePhone,
 } from "react-icons/hi2";
+import { REGISTER_URL } from "@/lib/constants";
 import { Button } from "./button";
 import { Section } from "./section";
 import styles from "./info.module.css";
@@ -108,11 +109,7 @@ export function Info() {
               <span className={styles.amount}>10 &euro;</span>
             </li>
           </ul>
-          <Button
-            href="https://start.gg/Headstomper"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
+          <Button href={REGISTER_URL} target="_blank" rel="noreferrer noopener">
             Register now
           </Button>
         </div>

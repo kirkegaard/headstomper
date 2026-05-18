@@ -6,6 +6,7 @@ import { Lineup } from "@/components/lineup";
 import { Overlay } from "@/components/overlay";
 import { Tours } from "@/components/tours";
 import { Slider } from "@/components/slider";
+import { SOCIALS } from "@/lib/constants";
 import data from "@/data/gallery-2025.json";
 import styles from "./page.module.css";
 
@@ -81,11 +82,7 @@ export default function Home() {
           <Hero />
         </div>
         <footer className={styles.footer}>
-          <a
-            href="https://x.com/Headstomper/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
+          <a href={SOCIALS[0].href} target="_blank" rel="noreferrer noopener">
             Follow us on X
           </a>
         </footer>

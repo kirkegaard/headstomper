@@ -4,6 +4,7 @@ import type { Easing } from "motion/react";
 import { motion } from "motion/react";
 import Image from "next/image";
 
+import { REGISTER_URL } from "@/lib/constants";
 import { Button } from "./button";
 import styles from "./hero.module.css";
 
@@ -35,11 +36,7 @@ export const Hero = () => (
       Malmö, Sweden
     </motion.p>
     <motion.div {...fade(1.8)} className={styles.cta}>
-      <Button
-        href="https://start.gg/Headstomper"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
+      <Button href={REGISTER_URL} target="_blank" rel="noreferrer noopener">
         Register now
       </Button>
       <p className={styles.deadline}>

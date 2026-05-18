@@ -3,6 +3,12 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Nav } from "@/components/nav";
 import { Wordmark } from "@/components/wordmark";
+import {
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_TITLE,
+  SITE_URL,
+} from "@/lib/constants";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,20 +22,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://headstomper.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default:
-      "Headstomper 2026 — Scandinavia's Greatest Fighting Game Tournament",
-    template: "%s – Headstomper",
+    default: SITE_TITLE,
+    template: `%s – ${SITE_NAME}`,
   },
-  description:
-    "Registrations are open! Scandinavia's greatest fighting game tournament returns 06-08 November 2026 in Malmö, Sweden. Featuring Guilty Gear: Strive, Tekken 8, Granblue Fantasy Versus: Rising, Street Fighter 6 and more.",
+  description: SITE_DESCRIPTION,
   openGraph: {
-    siteName: "Headstomper",
-    title: "Headstomper 2026 — Scandinavia's Greatest Fighting Game Tournament",
-    description:
-      "Registrations are open! Scandinavia's greatest fighting game tournament returns 06-08 November 2026 in Malmö, Sweden. Featuring Guilty Gear: Strive, Tekken 8, Granblue Fantasy Versus: Rising, Street Fighter 6 and more.",
-    url: "https://headstomper.com",
+    siteName: SITE_NAME,
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
     type: "website",
     images: [
       {
@@ -43,9 +46,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@Headstomper",
-    title: "Headstomper 2026 — Scandinavia's Greatest Fighting Game Tournament",
-    description:
-      "Registrations are open! Scandinavia's greatest fighting game tournament returns 06-08 November 2026 in Malmö, Sweden. Featuring Guilty Gear: Strive, Tekken 8, Granblue Fantasy Versus: Rising, Street Fighter 6 and more.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     images: ["/assets/images/og.png"],
   },
 };

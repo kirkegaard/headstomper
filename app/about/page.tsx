@@ -1,33 +1,16 @@
 import type { Metadata } from "next";
-import { FaDiscord, FaTwitch, FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { ABOUT_DESCRIPTION, SOCIALS } from "@/lib/constants";
 import { Container } from "@/components/container";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "About",
-  description:
-    "Headstomper is Scandinavia's biggest fighting game event — born from a love of competition and community in Copenhagen and Malmö.",
+  description: ABOUT_DESCRIPTION,
   openGraph: {
     title: "About – Headstomper",
-    description:
-      "Headstomper is Scandinavia's biggest fighting game event — born from a love of competition and community in Copenhagen and Malmö.",
+    description: ABOUT_DESCRIPTION,
   },
 };
-
-const social = [
-  { href: "https://x.com/Headstomper/", icon: FaXTwitter, label: "X" },
-  { href: "https://twitch.tv/headstomperTV", icon: FaTwitch, label: "Twitch" },
-  {
-    href: "https://www.youtube.com/@headstompertv",
-    icon: FaYoutube,
-    label: "YouTube",
-  },
-  {
-    href: "https://discord.gg/MJzU8Gn6gt",
-    icon: FaDiscord,
-    label: "Discord",
-  },
-];
 
 export default function About() {
   return (
@@ -41,7 +24,7 @@ export default function About() {
       <div className={styles.content}>
         <h1 className={styles.title}>About</h1>
         <p>
-          Headstomper is Scandinavia&apos;s biggest fighting game event - born
+          Headstomper is Scandinavia&apos;s greatest fighting game event - born
           from a love of competition and community.
         </p>
         <p>
@@ -53,7 +36,7 @@ export default function About() {
         <p>Same passion. Bigger stage.</p>
 
         <footer className={styles.footer}>
-          {social.map(({ href, icon: Icon, label }) => (
+          {SOCIALS.map(({ href, icon: Icon, label }) => (
             <a
               key={label}
               href={href}
