@@ -10,6 +10,7 @@ export const ABOUT_DESCRIPTION =
   "Headstomper is Scandinavia's greatest fighting game event — born from a love of competition and community in Copenhagen and Malmö.";
 
 export const REGISTER_URL = "https://start.gg/Headstomper";
+export const CONTACT_EMAIL = "contact@headstomper.com";
 
 export const SOCIALS = [
   { href: "https://x.com/Headstomper/", icon: FaXTwitter, label: "X" },
