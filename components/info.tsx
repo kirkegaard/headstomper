@@ -14,10 +14,10 @@ export function Info() {
         <div>
           <h3 className={styles.subtitle}>Venue</h3>
           <p className={styles.text}>
-            Again this year the event will be held at Quality Hotel View &mdash;
-            easy to access, just one train stop from Copenhagen Airport. Rooms
-            are limited and it is a busy weekend so book now! Remember to let
-            them know that you&rsquo;re there for Headstomper!
+            Again this year the event will be held at Quality Hotel View - easy
+            to access, just one train stop from Copenhagen Airport. Rooms are
+            limited and it is a busy weekend so book now! Remember to let them
+            know that you&rsquo;re there for Headstomper!
           </p>
           <ul className={styles.features}>
             <li>Accommodation deals at Quality Hotel View</li>

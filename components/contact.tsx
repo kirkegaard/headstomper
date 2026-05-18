@@ -22,9 +22,8 @@ export function Contact() {
     <Section title="Contact">
       <div className={styles.content}>
         <p className={styles.text}>
-          Headstomper is Scandinavia&rsquo;s greatest fighting game event
-          &mdash; born from a love of competition and community in Copenhagen
-          and Malm&ouml;.
+          Headstomper is Scandinavia&rsquo;s greatest fighting game event - born
+          from a love of competition and community in Copenhagen and Malm&ouml;.
         </p>
         <div className={styles.socials}>
           {social.map(({ href, icon: Icon, label }) => (

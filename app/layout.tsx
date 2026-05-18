@@ -18,7 +18,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://headstomper.com"),
   title: {
-    default: "Headstomper 2026 — Scandinavia's Greatest Fighting Game Tournament",
+    default:
+      "Headstomper 2026 — Scandinavia's Greatest Fighting Game Tournament",
     template: "%s – Headstomper",
   },
   description:

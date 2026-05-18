@@ -13,7 +13,9 @@ export function Button({ href, children, className, ...rest }: Props) {
       {...rest}
     >
       <span className={styles.label}>{children}</span>
-      <span className={styles.overlay} aria-hidden="true">{children}</span>
+      <span className={styles.overlay} aria-hidden="true">
+        {children}
+      </span>
     </a>
   );
 }
