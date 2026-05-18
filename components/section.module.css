@@ -1,0 +1,13 @@
+.section {
+  padding: 6rem 2rem;
+  background: #000;
+}
+
+.title {
+  font-size: 2rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3rem;
+}

@@ -27,6 +27,7 @@
   position: relative;
   width: 100vw;
   height: 100dvh;
+  overflow: hidden;
 
   /* @supports (height: 100dvh) { */
   /*   .fillFixed { */

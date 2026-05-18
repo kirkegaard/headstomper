@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://headstomper.com"),
   title: {
-    default: "Headstomper",
+    default: "Headstomper 2026",
     template: "%s – Headstomper",
   },
   description: "Save the date! See you 06-08th November 2026 in Malmö, Sweden.",
