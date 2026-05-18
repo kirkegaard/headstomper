@@ -22,6 +22,11 @@ const tours = [
 export function Tours() {
   return (
     <Section title="World Tour Games">
+      <p className={styles.text}>
+        We&rsquo;re proud to be an official stop on this year&rsquo;s world
+        tour circuits. Compete at the highest level and earn points towards the
+        global finals right here in Malm&ouml;.
+      </p>
       <div className={styles.grid}>
         {tours.map((tour) => (
           <a
