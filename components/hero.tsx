@@ -4,6 +4,7 @@ import type { Easing } from "motion/react";
 import { motion } from "motion/react";
 import Image from "next/image";
 
+import { Button } from "./button";
 import styles from "./hero.module.css";
 
 const fade = (delay: number) => ({
@@ -25,7 +26,7 @@ export const Hero = () => (
       />
     </motion.div>
     <motion.p className={styles.tagline} {...fade(0.6)}>
-      Save the date
+      Registrations are open
     </motion.p>
     <motion.p className={styles.date} {...fade(1)}>
       06 - 08 November 2026
@@ -33,5 +34,14 @@ export const Hero = () => (
     <motion.p className={styles.place} {...fade(1.4)}>
       Malmö, Sweden
     </motion.p>
+    <motion.div {...fade(1.8)} className={styles.cta}>
+      <Button
+        href="https://start.gg/Headstomper"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Register now
+      </Button>
+    </motion.div>
   </div>
 );

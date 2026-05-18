@@ -23,6 +23,14 @@ export function Nav() {
           {label}
         </Link>
       ))}
+      <a
+        href="https://start.gg/Headstomper"
+        target="_blank"
+        rel="noreferrer noopener"
+        className={styles.link}
+      >
+        Register
+      </a>
     </nav>
   );
 }
