@@ -1,3 +1,8 @@
+import {
+  HiOutlineEnvelope,
+  HiOutlineMapPin,
+  HiOutlinePhone,
+} from "react-icons/hi2";
 import { Section } from "./section";
 import styles from "./info.module.css";
 
@@ -8,29 +13,40 @@ export function Info() {
         <div>
           <h3 className={styles.subtitle}>Venue</h3>
           <p className={styles.text}>
-            Again this year the event will be held at Quality Hotel View. The
-            hotel is fully air conditioned, features multiple stages and even a
-            bar!
+            Again this year the event will be held at Quality Hotel View &mdash;
+            easy to access, just one train stop from Copenhagen Airport. Rooms
+            are limited and it is a busy weekend so book now! Remember to let
+            them know that you&rsquo;re there for Headstomper!
           </p>
-          {/* <p className={styles.text}> */}
-          {/*   Use the discount code: <code className={styles.code}>Headstomper2025</code> */}
-          {/* </p> */}
-          <p className={styles.text}>
-            Rooms are limited and it is a busy weekend so book now! Remember to
-            let them know that you&rsquo;re there for Headstomper!
-          </p>
-          <h4 className={styles.detail}>Address</h4>
-          <address className={styles.address}>
-            Hyllie stationsv&auml;g 29
-            <br />
-            215 32
-            <br />
-            Malm&ouml;, Sweden
-            <br />
-            <br />
-            <a href="tel:+46040374100">(+460) 40 37 41 00</a>
-            <br />
-            <a href="mailto:q.view@choice.se">q.view@choice.se</a>
+          <ul className={styles.features}>
+            <li>Accommodation deals at Quality Hotel View</li>
+            <li>Air conditioning!</li>
+            <li>Hotel bar</li>
+            <li>Multiple stages and streams for the main lineup</li>
+            <li>Side stages and streams for side events</li>
+            <li>Plenty of stations for casuals</li>
+            <li>
+              <b>Free ice cream!</b>
+            </li>
+          </ul>
+          <address className={styles.contact}>
+            <a
+              href="https://maps.google.com/?q=Quality+Hotel+View,+Hyllie+stationsväg+29,+215+32+Malmö,+Sweden"
+              target="_blank"
+              rel="noreferrer noopener"
+              className={styles.row}
+            >
+              <HiOutlineMapPin className={styles.icon} />
+              <span>Hyllie stationsv&auml;g 29, 215 32 Malm&ouml;, Sweden</span>
+            </a>
+            <a href="tel:+46040374100" className={styles.row}>
+              <HiOutlinePhone className={styles.icon} />
+              <span>(+460) 40 37 41 00</span>
+            </a>
+            <a href="mailto:q.view@choice.se" className={styles.row}>
+              <HiOutlineEnvelope className={styles.icon} />
+              <span>q.view@choice.se</span>
+            </a>
           </address>
         </div>
         <div>

@@ -37,21 +37,46 @@
   font-family: inherit;
 }
 
-.address {
-  font-style: normal;
-  font-size: 0.875rem;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0;
+.features {
+  list-style: circle;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
 }
 
-.address a {
+.features li {
+  font-size: 0.875rem;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.contact {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.address a:hover {
+.row:hover {
   color: #fff;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 .detail {

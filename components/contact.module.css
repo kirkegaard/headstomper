@@ -1,0 +1,28 @@
+.content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 1rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.icon {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s ease;
+}
+
+.icon:hover {
+  color: #fff;
+}

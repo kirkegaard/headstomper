@@ -18,23 +18,23 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://headstomper.com"),
   title: {
-    default: "Headstomper 2026 — Scandinavia's Biggest Fighting Game Tournament",
+    default: "Headstomper 2026 — Scandinavia's Greatest Fighting Game Tournament",
     template: "%s – Headstomper",
   },
   description:
-    "Registrations are open! Scandinavia's biggest fighting game tournament returns 06-08 November 2026 in Malmö, Sweden. Featuring Guilty Gear: Strive, Tekken 8, Granblue Fantasy Versus: Rising, Street Fighter 6 and more.",
+    "Registrations are open! Scandinavia's greatest fighting game tournament returns 06-08 November 2026 in Malmö, Sweden. Featuring Guilty Gear: Strive, Tekken 8, Granblue Fantasy Versus: Rising, Street Fighter 6 and more.",
   openGraph: {
     siteName: "Headstomper",
-    title: "Headstomper 2026 — Scandinavia's Biggest Fighting Game Tournament",
+    title: "Headstomper 2026 — Scandinavia's Greatest Fighting Game Tournament",
     description:
-      "Registrations are open! Scandinavia's biggest fighting game tournament returns 06-08 November 2026 in Malmö, Sweden. Featuring Guilty Gear: Strive, Tekken 8, Granblue Fantasy Versus: Rising, Street Fighter 6 and more.",
+      "Registrations are open! Scandinavia's greatest fighting game tournament returns 06-08 November 2026 in Malmö, Sweden. Featuring Guilty Gear: Strive, Tekken 8, Granblue Fantasy Versus: Rising, Street Fighter 6 and more.",
     url: "https://headstomper.com",
     type: "website",
     images: [
       {
-        url: "/assets/images/og.jpg",
-        width: 1200,
-        height: 630,
+        url: "/assets/images/og.png",
+        width: 1920,
+        height: 1080,
         alt: "Headstomper 2026",
       },
     ],
@@ -42,10 +42,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@Headstomper",
-    title: "Headstomper 2026 — Scandinavia's Biggest Fighting Game Tournament",
+    title: "Headstomper 2026 — Scandinavia's Greatest Fighting Game Tournament",
     description:
-      "Registrations are open! Scandinavia's biggest fighting game tournament returns 06-08 November 2026 in Malmö, Sweden. Featuring Guilty Gear: Strive, Tekken 8, Granblue Fantasy Versus: Rising, Street Fighter 6 and more.",
-    images: ["/assets/images/og.jpg"],
+      "Registrations are open! Scandinavia's greatest fighting game tournament returns 06-08 November 2026 in Malmö, Sweden. Featuring Guilty Gear: Strive, Tekken 8, Granblue Fantasy Versus: Rising, Street Fighter 6 and more.",
+    images: ["/assets/images/og.png"],
   },
 };
 

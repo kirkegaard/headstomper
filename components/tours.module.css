@@ -1,0 +1,24 @@
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

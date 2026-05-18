@@ -1,8 +1,10 @@
+import { Contact } from "@/components/contact";
 import { Container } from "@/components/container";
 import { Hero } from "@/components/hero";
 import { Info } from "@/components/info";
 import { Lineup } from "@/components/lineup";
 import { Overlay } from "@/components/overlay";
+import { Tours } from "@/components/tours";
 import { Slider } from "@/components/slider";
 import data from "@/data/gallery-2025.json";
 import styles from "./page.module.css";
@@ -11,7 +13,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Event",
   name: "Headstomper 2026",
-  description: "Scandinavia's biggest fighting game tournament.",
+  description: "Scandinavia's greatest fighting game tournament.",
   startDate: "2026-11-06",
   endDate: "2026-11-08",
   eventStatus: "https://schema.org/EventScheduled",
@@ -89,7 +91,9 @@ export default function Home() {
         </footer>
       </Container>
       <Lineup />
+      <Tours />
       <Info />
+      <Contact />
     </main>
   );
 }
