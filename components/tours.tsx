@@ -46,6 +46,9 @@ export function Tours() {
           </a>
         ))}
       </div>
+      <p className={styles.legal}>
+        TEKKEN™8 & ©Bandai Namco Entertainment Inc.
+      </p>
     </Section>
   );
 }

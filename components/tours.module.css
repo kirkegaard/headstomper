@@ -7,6 +7,13 @@
   margin: 0 auto 3rem;
 }
 
+.legal {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .grid {
   display: flex;
   justify-content: center;
