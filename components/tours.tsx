@@ -17,6 +17,13 @@ const tours = [
     width: 200,
     height: 80,
   },
+  {
+    name: "Tekken Tag Tour",
+    image: "/assets/world-tour/GBVSWT_Logo_White.png",
+    href: "https://gbvs-cygames-cup.jp/en/",
+    width: 200,
+    height: 80,
+  },
 ];
 
 export function Tours() {
