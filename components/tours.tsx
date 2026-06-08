@@ -47,7 +47,8 @@ export function Tours() {
         ))}
       </div>
       <p className={styles.legal}>
-        TEKKEN™8 & ©Bandai Namco Entertainment Inc.
+        TEKKEN™8 & ©Bandai Namco Entertainment Inc. © Cygames, Inc. Developed by
+        ARC SYSTEM WORKS © ARC SYSTEM WORKS
       </p>
     </Section>
   );
