@@ -82,8 +82,8 @@ export function Info() {
             </li>
             <li className={styles.price}>
               <span className={styles.label}>
-                Early Bird
-                <span className={styles.note}>Ends 18 June</span>
+                <s className={styles.sold}>Early Bird</s>
+                <span className={styles.note}>Sold out</span>
               </span>
               <span className={styles.amount}>55 &euro;</span>
             </li>
