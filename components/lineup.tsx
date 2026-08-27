@@ -4,9 +4,8 @@ import styles from "./lineup.module.css";
 
 const games = [
   {
-    name: "Guilty Gear: Strive",
-    sub: "AWT 26-27 Gold Event",
-    image: "/assets/games/guilty-gear.jpg",
+    name: "Street Fighter 6",
+    image: "/assets/games/streetfighter6.png",
   },
   {
     name: "Tekken 8",
@@ -14,13 +13,18 @@ const games = [
     image: "/assets/games/tekken.jpg",
   },
   {
+    name: "Marvel Tokon: Fighting Souls",
+    image: "/assets/games/marvel-tokon.webp",
+  },
+  {
+    name: "Guilty Gear: Strive",
+    sub: "AWT 26-27 Gold Event",
+    image: "/assets/games/guilty-gear.jpg",
+  },
+  {
     name: "Granblue Fantasy Versus: Rising",
     sub: "GBVS World Tour 4 Star Event",
     image: "/assets/games/granblue.jpg",
-  },
-  {
-    name: "Street Fighter 6",
-    image: "/assets/games/streetfighter6.png",
   },
 ];
 

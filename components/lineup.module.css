@@ -1,8 +1,9 @@
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
@@ -12,6 +13,7 @@
   aspect-ratio: 3 / 4;
   transform: skewY(-2deg);
   border-radius: 2px;
+  flex: 0 1 300px;
 }
 
 .image {
