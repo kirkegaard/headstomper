@@ -56,6 +56,8 @@ export function Tours() {
       <p className={styles.legal}>
         TEKKEN™8 & ©Bandai Namco Entertainment Inc. © Cygames, Inc. Developed by
         ARC SYSTEM WORKS © ARC SYSTEM WORKS
+        <br />© 2026 MARVEL ©2026 Sony Interactive Entertainment Inc. Developed
+        by ARC SYSTEM WORKS CO., LTD
       </p>
     </Section>
   );
