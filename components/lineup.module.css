@@ -20,6 +20,12 @@
   flex-basis: 250px;
 }
 
+@media (max-width: 768px) {
+  .side .card {
+    flex-basis: calc(50% - 0.75rem);
+  }
+}
+
 .image {
   position: absolute;
   inset: 0;

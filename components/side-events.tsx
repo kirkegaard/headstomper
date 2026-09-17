@@ -8,7 +8,7 @@ const games = [
     image: "/assets/games/2xko.jpg",
   },
   {
-    name: "Avatar Legends: The Fighting Game",
+    name: "Avatar Legends",
     image: "/assets/games/avatar-legends-the-fighting-game.jpg",
   },
   {

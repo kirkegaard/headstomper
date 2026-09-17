@@ -1,0 +1,16 @@
+.powered h2 {
+  font-size: 1.25rem;
+}
+
+.logo {
+  display: block;
+  width: min(100%, 300px);
+  height: auto;
+  margin: 0 auto;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 1;
+}
