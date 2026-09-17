@@ -25,7 +25,7 @@ const games = [
   },
   {
     name: "Rivals of Aether II",
-    image: "/assets/games/rivals-of-aether-ii.jpg",
+    image: "/assets/games/rivals-of-aether-ii.png",
   },
 ];
 

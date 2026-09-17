@@ -8,8 +8,8 @@ export function Powered() {
       <Image
         src="/assets/images/AGON_BY_AOC_LOGO_LR_WHITE.png"
         alt="AGON by AOC"
-        width={300}
-        height={172}
+        width={1267}
+        height={723}
         className={styles.logo}
       />
     </Section>
