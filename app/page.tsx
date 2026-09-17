@@ -4,10 +4,11 @@ import { Hero } from "@/components/hero";
 import { Info } from "@/components/info";
 import { Lineup } from "@/components/lineup";
 import { Overlay } from "@/components/overlay";
-import { Tours } from "@/components/tours";
+import { SideEvents } from "@/components/side-events";
 import { Slider } from "@/components/slider";
-import { SOCIALS } from "@/lib/constants";
+import { Tours } from "@/components/tours";
 import data from "@/data/gallery-2025.json";
+import { SOCIALS } from "@/lib/constants";
 import styles from "./page.module.css";
 
 const jsonLd = {
@@ -88,6 +89,7 @@ export default function Home() {
         </footer>
       </Container>
       <Lineup />
+      <SideEvents />
       <Tours />
       <Info />
       <Contact />

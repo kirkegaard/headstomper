@@ -16,6 +16,10 @@
   flex: 0 1 300px;
 }
 
+.side .card {
+  flex-basis: 250px;
+}
+
 .image {
   position: absolute;
   inset: 0;
