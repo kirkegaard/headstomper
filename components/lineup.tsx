@@ -56,7 +56,6 @@ export function Lineup() {
           </div>
         ))}
       </div>
-      <h3 className={styles.more}>More coming soon!</h3>
     </Section>
   );
 }

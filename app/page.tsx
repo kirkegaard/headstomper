@@ -4,6 +4,7 @@ import { Hero } from "@/components/hero";
 import { Info } from "@/components/info";
 import { Lineup } from "@/components/lineup";
 import { Overlay } from "@/components/overlay";
+import { Powered } from "@/components/powered";
 import { SideEvents } from "@/components/side-events";
 import { Slider } from "@/components/slider";
 import { Tours } from "@/components/tours";
@@ -92,6 +93,7 @@ export default function Home() {
       <SideEvents />
       <Tours />
       <Info />
+      <Powered />
       <Contact />
     </main>
   );

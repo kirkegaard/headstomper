@@ -76,12 +76,6 @@
   margin: 0.25rem 0 0;
 }
 
-.more {
-  font-style: italic;
-  margin-top: 1rem;
-  justify-self: center;
-}
-
 .placeholder {
   position: absolute;
   inset: 0;
