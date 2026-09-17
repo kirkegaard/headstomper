@@ -10,7 +10,7 @@ const games = [
   {
     name: "Tekken 8",
     sub: "TWT 2026 Challenger Event",
-    image: "/assets/games/tekken.jpg",
+    image: "/assets/games/tekken.png",
   },
   {
     name: "Marvel Tokon: Fighting Souls",
