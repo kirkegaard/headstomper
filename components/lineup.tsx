@@ -14,7 +14,7 @@ const games = [
   },
   {
     name: "Marvel Tokon: Fighting Souls",
-    image: "/assets/games/marvel-tokon.webp",
+    image: "/assets/games/marvel-tokon.png",
   },
   {
     name: "Guilty Gear: Strive",
