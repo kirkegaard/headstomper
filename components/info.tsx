@@ -89,8 +89,8 @@ export function Info() {
             </li>
             <li className={styles.price}>
               <span className={styles.label}>
-                Regular Pass
-                <span className={styles.note}>Ends 30 September</span>
+                <s className={styles.sold}>Regular Pass</s>
+                <span className={styles.note}>Sold out</span>
               </span>
               <span className={styles.amount}>65 &euro;</span>
             </li>
