@@ -96,17 +96,21 @@ export function Info() {
             </li>
             <li className={styles.price}>
               <span className={styles.label}>
-                Late Pass
+                <s className={styles.sold}>Late Pass</s>
                 <span className={styles.note}>Ends 31 October</span>
               </span>
               <span className={styles.amount}>75 &euro;</span>
             </li>
             <li className={styles.price}>
               <span className={styles.label}>
-                Tournament Entry
+                <s className={styles.sold}>Tournament Entry</s>
                 <span className={styles.note}>Per main game</span>
               </span>
               <span className={styles.amount}>10 &euro;</span>
+            </li>
+            <li className={styles.price}>
+              <span className={styles.label}>Spectator pass</span>
+              <span className={styles.amount}>50 &euro;</span>
             </li>
           </ul>
           <Button href={REGISTER_URL} target="_blank" rel="noreferrer noopener">
