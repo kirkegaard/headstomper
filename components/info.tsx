@@ -3,8 +3,6 @@ import {
   HiOutlineMapPin,
   HiOutlinePhone,
 } from "react-icons/hi2";
-import { REGISTER_URL } from "@/lib/constants";
-import { Button } from "./button";
 import styles from "./info.module.css";
 import { Section } from "./section";
 
@@ -109,13 +107,12 @@ export function Info() {
               <span className={styles.amount}>10 &euro;</span>
             </li>
             <li className={styles.price}>
-              <span className={styles.label}>Spectator pass</span>
+              <span className={styles.label}>
+                <s className={styles.sold}>Spectator pass</s>
+              </span>
               <span className={styles.amount}>50 &euro;</span>
             </li>
           </ul>
-          <Button href={REGISTER_URL} target="_blank" rel="noreferrer noopener">
-            Register now
-          </Button>
         </div>
       </div>
     </Section>

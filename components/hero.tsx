@@ -4,7 +4,6 @@ import type { Easing } from "motion/react";
 import { motion } from "motion/react";
 import Image from "next/image";
 
-import { REGISTER_URL } from "@/lib/constants";
 import { Button } from "./button";
 import styles from "./hero.module.css";
 
@@ -27,7 +26,7 @@ export const Hero = () => (
       />
     </motion.div>
     <motion.p className={styles.tagline} {...fade(0.6)}>
-      Registrations are open
+      Thank you for an unforgettable weekend
     </motion.p>
     <motion.p className={styles.date} {...fade(1)}>
       06 - 08 November 2026
@@ -35,13 +34,13 @@ export const Hero = () => (
     <motion.p className={styles.place} {...fade(1.4)}>
       Malmö, Sweden
     </motion.p>
-    <motion.div {...fade(1.8)} className={styles.cta}>
-      <Button href={REGISTER_URL} target="_blank" rel="noreferrer noopener">
-        Register now
-      </Button>
-      <p className={styles.deadline}>
-        Registration closes 31 October 2026, 23:59 CEST
-      </p>
+    <motion.p className={styles.thanks} {...fade(1.8)}>
+      From the first pools match to the final grand final — thank you. To
+      everyone who played, cheered, volunteered, and supported us: you made
+      Headstomper 2026 unforgettable. See you next year.
+    </motion.p>
+    <motion.div className={styles.cta} {...fade(2.2)}>
+      <Button href="/legacy">See results</Button>
     </motion.div>
   </div>
 );

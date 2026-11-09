@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useState } from "react";
-import { REGISTER_URL } from "@/lib/constants";
 import styles from "./nav.module.css";
 
 const links = [
@@ -43,15 +42,6 @@ export function Nav() {
             {label}
           </Link>
         ))}
-        <a
-          href={REGISTER_URL}
-          target="_blank"
-          rel="noreferrer noopener"
-          className={styles.link}
-          onClick={close}
-        >
-          Register
-        </a>
       </div>
     </nav>
   );
