@@ -35,12 +35,13 @@ export const Hero = () => (
       Malmö, Sweden
     </motion.p>
     <motion.p className={styles.thanks} {...fade(1.8)}>
-      From the first pools match to the final grand final — thank you. To
+      From the first pools match to the final grand final - thank you. To
       everyone who played, cheered, volunteered, and supported us: you made
       Headstomper 2026 unforgettable. See you next year.
     </motion.p>
     <motion.div className={styles.cta} {...fade(2.2)}>
       <Button href="/legacy">See results</Button>
+      <Button href="/gallery">See gallery</Button>
     </motion.div>
   </div>
 );
