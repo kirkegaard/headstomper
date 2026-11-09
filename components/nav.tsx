@@ -23,6 +23,7 @@ export function Nav() {
   return (
     <nav className={styles.nav}>
       <button
+        type="button"
         className={styles.toggle}
         onClick={toggle}
         aria-label="Toggle menu"

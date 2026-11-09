@@ -5,8 +5,8 @@ import {
 } from "react-icons/hi2";
 import { REGISTER_URL } from "@/lib/constants";
 import { Button } from "./button";
-import { Section } from "./section";
 import styles from "./info.module.css";
+import { Section } from "./section";
 
 export function Info() {
   return (

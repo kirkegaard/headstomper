@@ -1,6 +1,6 @@
 import { CONTACT_EMAIL, SOCIALS } from "@/lib/constants";
-import { Section } from "./section";
 import styles from "./contact.module.css";
+import { Section } from "./section";
 
 export function Contact() {
   return (

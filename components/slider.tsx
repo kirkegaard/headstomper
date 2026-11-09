@@ -2,7 +2,7 @@
 
 import type { Easing } from "motion/react";
 import { AnimatePresence, motion, useAnimate } from "motion/react";
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 import styles from "./slider.module.css";
@@ -15,21 +15,31 @@ interface SliderProps {
   easing?: Easing | Easing[];
 }
 
+const quality = 60;
+
 function random(arr: string[], exclude?: string): string {
   const pool = arr.length > 1 ? arr.filter((i) => i !== exclude) : arr;
   return pool[Math.floor(Math.random() * pool.length)];
 }
 
 function preload(src: string) {
+  const { props } = getImageProps({
+    src,
+    alt: "",
+    fill: true,
+    sizes: "100vw",
+    quality,
+  });
   const img = new window.Image();
-  img.src = src;
+  img.srcset = props.srcSet ?? "";
+  img.sizes = props.sizes ?? "";
+  img.src = props.src;
 }
 
 interface SlideProps {
   src: string;
   duration: number;
   easing: Easing | Easing[];
-  onExited?: () => void;
 }
 
 const Slide = ({ src, duration, easing }: SlideProps) => {
@@ -52,9 +62,10 @@ const Slide = ({ src, duration, easing }: SlideProps) => {
         src={src}
         alt=""
         fill
+        sizes="100vw"
+        quality={quality}
         style={{ objectFit: "cover" }}
         onLoad={() => setLoaded(true)}
-        priority
       />
     </motion.div>
   );
@@ -74,20 +85,40 @@ export const Slider = ({
     const initial = random(data);
     ref.current = initial;
     setCurrent(initial);
-
-    // preload the second image early
     preload(`${basePath}/${random(data, initial)}`);
 
-    const id = setInterval(() => {
+    let id: ReturnType<typeof setInterval> | undefined;
+
+    const tick = () => {
       const next = random(data, ref.current ?? undefined);
       ref.current = next;
       setCurrent(next);
-
-      // preload the one after
       preload(`${basePath}/${random(data, next)}`);
-    }, interval);
+    };
 
-    return () => clearInterval(id);
+    const start = () => {
+      if (id) return;
+      id = setInterval(tick, interval);
+    };
+
+    const stop = () => {
+      if (!id) return;
+      clearInterval(id);
+      id = undefined;
+    };
+
+    const visible = () => {
+      if (document.visibilityState === "visible") start();
+      else stop();
+    };
+
+    if (document.visibilityState === "visible") start();
+    document.addEventListener("visibilitychange", visible);
+
+    return () => {
+      stop();
+      document.removeEventListener("visibilitychange", visible);
+    };
   }, [data, interval, basePath]);
 
   if (!current) return <div className={styles.root} />;

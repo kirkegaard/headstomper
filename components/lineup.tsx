@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Section } from "./section";
 import styles from "./lineup.module.css";
+import { Section } from "./section";
 
 const games = [
   {

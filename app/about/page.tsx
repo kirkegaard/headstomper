@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { ABOUT_DESCRIPTION, SOCIALS } from "@/lib/constants";
 import { Container } from "@/components/container";
+import { ABOUT_DESCRIPTION, SOCIALS } from "@/lib/constants";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
