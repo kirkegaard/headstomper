@@ -1,10 +1,13 @@
 import type { MetadataRoute } from "next";
 import events from "@/data/events.json";
+import { years as galleryYears } from "@/lib/gallery";
 
 const base = "https://headstomper.com";
 const years = Object.keys(events).sort((a, b) => Number(b) - Number(a));
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const gallery = await galleryYears();
+
   return [
     {
       url: base,
@@ -18,6 +21,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.7,
     },
+    {
+      url: `${base}/gallery`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    ...gallery.map((year) => ({
+      url: `${base}/gallery/${year}`,
+      lastModified: new Date(),
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
+    })),
     {
       url: `${base}/legacy`,
       lastModified: new Date(),

@@ -8,8 +8,8 @@ import { Powered } from "@/components/powered";
 import { SideEvents } from "@/components/side-events";
 import { Slider } from "@/components/slider";
 import { Tours } from "@/components/tours";
-import data from "@/data/gallery-2025.json";
 import { SOCIALS } from "@/lib/constants";
+import { photos, years } from "@/lib/gallery";
 import styles from "./page.module.css";
 
 const jsonLd = {
@@ -37,7 +37,10 @@ const jsonLd = {
   },
 };
 
-export default function Home() {
+export default async function Home() {
+  const [year] = await years();
+  const data = await photos(year);
+
   return (
     <main>
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
@@ -74,7 +77,7 @@ export default function Home() {
         >
           <Slider
             data={data}
-            basePath="/assets/gallery/2025"
+            basePath={`/assets/gallery/${year}`}
             interval={4500}
             transition={2500}
             easing="easeInOut"

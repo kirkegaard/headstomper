@@ -1,0 +1,54 @@
+.page {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 16rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content {
+  animation: fadeIn 500ms ease forwards;
+}
+
+.years {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.year,
+.yearActive {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.year {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.year:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.yearActive {
+  color: #fff;
+}
