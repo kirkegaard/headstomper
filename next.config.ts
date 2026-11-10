@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 2592000,
     qualities: [60, 75],
   },
+  outputFileTracingExcludes: {
+    "*": ["./public/assets/gallery/**/*"],
+  },
 };
 
 export default nextConfig;
