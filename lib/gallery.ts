@@ -1,8 +1,21 @@
 import { readdir } from "node:fs/promises";
-import { join } from "node:path";
+import { join, relative, sep } from "node:path";
 
 const root = join(process.cwd(), "public", "assets", "gallery");
 const image = /\.(jpe?g|png|webp|avif)$/i;
+
+async function walk(dir: string): Promise<string[]> {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const found = await Promise.all(
+    entries.map(async (entry) => {
+      const path = join(dir, entry.name);
+      if (entry.isDirectory()) return walk(path);
+      return image.test(entry.name) ? [path] : [];
+    }),
+  );
+
+  return found.flat();
+}
 
 /** Returns gallery years with photos, newest first. */
 export async function years() {
@@ -19,8 +32,10 @@ export async function years() {
     .sort((a, b) => Number(b) - Number(a));
 }
 
-/** Returns sorted photo filenames for a year. */
+/** Returns sorted photo paths for a year, relative to the year folder. */
 export async function photos(year: string) {
-  const files = await readdir(join(root, year));
-  return files.filter((file) => image.test(file)).sort();
+  const dir = join(root, year);
+  const files = await walk(dir);
+
+  return files.map((file) => relative(dir, file).replaceAll(sep, "/")).sort();
 }
